@@ -84,3 +84,53 @@
     margin-left: 40px;
     margin-right: 40px;
 }
+
+.move{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.move-date{
+    font-family: "Jost", sans-serif;;
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.move-descp{
+    font-family: "Jost", sans-serif;;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.halloween{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.halloween-date{
+    font-family: "Jost", sans-serif;;
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.halloween-descp{
+    font-family: "Jost", sans-serif;;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
