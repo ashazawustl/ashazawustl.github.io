@@ -1,0 +1,155 @@
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jost-regualar {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Julius Sans One", "Jost", sans-serif;
+}
+
+.navbar{
+    height: 80px;
+    background: #BACDF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.logo{
+    color: #000;
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-right: 80px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.navbar a:hover{
+    color: #fff;
+}
+
+.navbarb{
+    height: 80px;
+    bottom: 0;
+    background: #BACDF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 3rem;
+}
+
+.navbarb a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.navbarb a:hover{
+    color: #fff;
+}
+
+.hero{
+    background: #fff;
+}
+
+.container{
+    display: flex;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.building-pic{
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 43px;
+    width: 950px;
+    height: 824px;
+
+}
+
+.description{
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left:40px;
+    margin-right: 30px;
+}
+
+.openings{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-left:40px;
+    margin-top:30px;
+}
+
+.job-descp{
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    margin-right: 30px;
+    margin-left:40px;
+}
+
+.interest{
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    margin-left:40px;
+    margin-top: 20px;
+
+}
+
+.block{
+    line-height: 1.6;
+}
+
+.contact{
+    font-family: "Jost", sans-serif;
+    display: block;
+    font-size: 25px;
+    margin-top:20px;
+    margin-left:40px;
+    width: 27%
+}
+
+.location{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-left:40px;
+    margin-top:30px;
+}
+
+.map{
+    margin-left:40px;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}

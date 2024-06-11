@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px)/2);
+    padding: 3rem;
 }
 
 .logo{
@@ -32,7 +32,7 @@
     font-size: 3rem;
     font-weight: normal;
     font-style: normal;
-    padding: 0 2rem;
+    margin-right: 80px;
 }
 
 .navbar a{
@@ -54,7 +54,7 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    padding: 0rem calc((100vw - 1300px)/2);
+    padding: 3rem;
 }
 
 .navbarb a{
@@ -86,9 +86,28 @@
     margin-top: 15px;
 }
 
-.p2{
+.audio{
     font-family:  "Julius Sans One", sans-serif;
-    padding: 1.5rem;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+.analysis{
+    font-family:  "Julius Sans One", sans-serif;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+.rett{
+    font-family:  "Julius Sans One", sans-serif;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+.research {
+    font-family:  "Julius Sans One", sans-serif;
+    padding: 0.7rem;
+    font-size: 25px;
 }
 
 .container{
@@ -98,15 +117,15 @@
 .left-half{
     background-color: #fff;
     flex: 0.75;
-    margin-right: 50px;
-    margin-left:80px;
+    margin-right: 30px;
+    margin-left:40px;
     margin-top:50px;
 }
 
 .right-half{
     background-color: #fff;
     flex: 1;
-    margin-right: 50px;
+    margin-right: 30px;
     margin-left: 50px;
     margin-top: 50px;
 }
@@ -133,11 +152,13 @@
 }
 
 .button1:hover{
-    background: #fff;
-    color: #000;
+    background: rgb(86, 118, 176);
+    color: #fff;
 }
 
-button .button2{
+.button2{
+    margin-top: 20px;
+    border-radius: 70px;
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
@@ -146,12 +167,14 @@ button .button2{
     cursor: pointer;
 }
 
-button.button2:hover{
-    background: #fff;
-    color: #000;
+.button2:hover{
+    background: rgb(86, 118, 176);
+    color: #fff;
 }
 
-button .button3{
+.button3{
+    margin-top: 20px;
+    border-radius: 70px;
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
@@ -160,21 +183,23 @@ button .button3{
     cursor: pointer;
 }
 
-button.button3:hover{
-    background: #fff;
-    color: #000;
+.button3:hover{
+    background: rgb(86, 118, 176);
+    color: #fff;
 }
 
 .column-left{
     display: flex;
     justify-content: center;
-    align-items: cente;
+    align-items: center;
     padding: 0rem 2rem;
 }
 
 .hero-image{
-    width: 600px;
-    height: 500px;
+    width: 850px;
+    height: 700px;
+    padding:0;
+    border-radius: 43px;
 }
 
 @media screen and (max-width:768px){
