@@ -18,6 +18,47 @@
     font-family: "Julius Sans One", "Jost", sans-serif;
 }
 
+.dropbtn{
+    background-color: #BACDF2;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown:hover .dropbtn {
+    background: rgb(86, 118, 176);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #BACDF2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.dropdown-content a:hover{
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
 .navbar{
     height: 80px;
     background: #BACDF2;
