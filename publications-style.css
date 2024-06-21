@@ -1,0 +1,44 @@
+body,
+html,
+h1{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+section{
+    height: 100vh;
+}
+.tag{
+}
+
+.tag{
+    opacity: 0;
+    transform: translate(0,10vh);
+    transition: all 5s;
+}
+.tag.visible{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.twenty24{
+    background-color: lightyellow;
+}
+.twenty23{
+    background-color: lightcoral;
+}
+.twenty22{
+    background-color: lightblue;
+}
+.twenty21{
+    background-color: lightgreen;
+}
+.twenty20{
+    background-color: lightseagreen;
+}
+.twenty19-and-earlier{
+    background-color: lightgrey;
+}

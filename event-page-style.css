@@ -197,3 +197,15 @@
     margin-left: 40px;
     margin-right: 40px;
 }
+
+.carousel-slide{
+    margin-left: 40px;
+}
+
+.carousel-item-active img{
+    width:100%;
+}
+
+.carousel-item img{
+    width:100%;
+}
