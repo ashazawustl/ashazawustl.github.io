@@ -1,10 +1,119 @@
-body,
-html,
-h1{
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jost-regualar {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Julius Sans One", "Jost", sans-serif;
+}
+
+.dropbtn{
+    background-color: #BACDF2;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown:hover .dropbtn {
+    background: rgb(86, 118, 176);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #BACDF2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.dropdown-content a:hover{
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+.navbar{
+    height: 80px;
+    background: #BACDF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.logo{
+    color: #000;
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-right: 80px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.navbar a:hover{
+    color: #fff;
+}
+
+.navbarb{
+    height: 80px;
+    bottom: 0;
+    background: #BACDF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 3rem;
+}
+
+.navbarb a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.navbarb a:hover{
+    color: #fff;
+}
+
+.page-sections h1{
     margin: 0;
     padding: 0;
 }
-h1{
+.page-sections h1{
+    font-family: "Julius Sans One", sans-serif;
     color: white;
     font-size: 4rem;
     text-align: center;
@@ -18,13 +127,13 @@ section{
 .tag{
     opacity: 0;
     transform: translate(0,10vh);
-    transition: all 5s;
+    transition: all 1s;
 }
-.tag.visible{
+.page-sections .tag.visible{
     opacity: 1;
     transform: translate(0,0);
 }
-.twenty24{
+.page-sections.twenty24{
     background-color: lightyellow;
 }
 .twenty23{
