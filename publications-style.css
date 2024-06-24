@@ -114,16 +114,12 @@
 }
 .page-sections h1{
     font-family: "Julius Sans One", sans-serif;
-    color: white;
     font-size: 4rem;
-    text-align: center;
+    text-align: center; 
 }
 section{
     height: 100vh;
 }
-.tag{
-}
-
 .tag{
     opacity: 0;
     transform: translate(0,10vh);
@@ -133,8 +129,8 @@ section{
     opacity: 1;
     transform: translate(0,0);
 }
-.page-sections.twenty24{
-    background-color: lightyellow;
+.twenty24{
+    background-color: lightcyan;
 }
 .twenty23{
     background-color: lightcoral;
