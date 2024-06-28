@@ -110,14 +110,14 @@
 
 .team-building{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 30px;
     margin-left: 40px;
 }
 
 .comm-descp{
     font-family: "Jost", sans-serif;;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -125,7 +125,7 @@
 
 .solar{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -134,7 +134,7 @@
 
 .solar-date{
     font-family: "Jost", sans-serif;;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 3px;
     margin-left: 40px;
     margin-right: 40px;
@@ -142,7 +142,7 @@
 
 .solar-descp{
     font-family: "Jost", sans-serif;;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -150,7 +150,7 @@
 
 .move{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -159,7 +159,7 @@
 
 .move-date{
     font-family: "Jost", sans-serif;;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 3px;
     margin-left: 40px;
     margin-right: 40px;
@@ -167,7 +167,7 @@
 
 .move-descp{
     font-family: "Jost", sans-serif;;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -175,7 +175,7 @@
 
 .halloween{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -184,7 +184,7 @@
 
 .halloween-date{
     font-family: "Jost", sans-serif;;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 3px;
     margin-left: 40px;
     margin-right: 40px;
@@ -192,20 +192,72 @@
 
 .halloween-descp{
     font-family: "Jost", sans-serif;;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.carousel-slide{
+.kimchi{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 45px;
+    margin-top: 30px;
     margin-left: 40px;
+    margin-right: 40px;
 }
 
-.carousel-item-active img{
-    width:100%;
+.lunch-date{
+    font-family: "Jost", sans-serif;;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.carousel-item img{
-    width:100%;
+.trucks{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.food-date{
+    font-family: "Jost", sans-serif;;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.party{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.house-date{
+    font-family: "Jost", sans-serif;;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.poster{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.poster-date{
+    font-family: "Jost", sans-serif;;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
