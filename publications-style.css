@@ -108,17 +108,35 @@
     color: #fff;
 }
 
+.pub-page-title{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .page-sections h1{
     margin: 0;
     padding: 0;
 }
+
+hr {
+    height: 2px; 
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    background-color: rgb(61, 60, 60); 
+    border: none; 
+}
+
 .page-sections h1{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 4rem;
-    text-align: center; 
+    font-size: 45px;
+    text-align: left; 
 }
 section{
-    height: 100vh;
+    height: 70vh;
 }
 .tag{
     opacity: 0;
@@ -132,18 +150,88 @@ section{
 .twenty24{
     background-color: #F0FFFF;
 }
-.twenty23{
-    background-color: #ADD8E6;
+.page-sections h1{
+    margin-left: 10rem;
+    margin-top: 30px;
+
+}
+.twenty24 .twenty24-list{
+    margin-top: 30px;
+    margin-left: 10rem;
+    font-size: 35px;
+    margin-right: 10rem;
+}
+.twenty24 p{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10rem;
+}
+.twenty22 .twenty22-list{
+    margin-top: 30px;
+    margin-left: 10rem;
+    font-size: 35px;
+    margin-right: 10rem;
+}
+.twenty22 p{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10rem;
+}
+.twenty21 .twenty21-list{
+    margin-top: 30px;
+    margin-left: 10rem;
+    font-size: 35px;
+    margin-right: 10rem;
+}
+.twenty21 p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.twenty20 .twenty20-list{
+    margin-top: 30px;
+    margin-left: 10rem;
+    font-size: 35px;
+    margin-right: 10rem;
+}
+.twenty20 p{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10rem;
+}
+.twenty19 .twenty19-list{
+    margin-top: 30px;
+    margin-left: 10rem;
+    font-size: 35px;
+    margin-right: 10rem;
+}
+.twenty19 p{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10rem;
+}
+.twenty17-and-earlier p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.twenty17-and-earlier .twenty17-list{
+    margin-top: 30px;
+    margin-left: 10rem;
+    font-size: 35px;
+    margin-right: 10rem;
 }
 .twenty22{
-    background-color: #7393B3;
+    background-color: #ADD8E6;
 }
 .twenty21{
-    background-color: #4682B4;
+    background-color: #7393B3;
 }
 .twenty20{
+    background-color: #4682B4;
+}
+.twenty19{
     background-color: #6082B6;
 }
-.twenty19-and-earlier{
+.twenty17-and-earlier{
     background-color: #F0FFFF;
+    height: 175vh;
 }
