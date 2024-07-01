@@ -65,12 +65,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .logo{
     color: #000;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: normal;
     font-style: normal;
     margin-right: 80px;
@@ -86,32 +86,15 @@
     color: #fff;
 }
 
-.navbarb{
-    height: 80px;
-    bottom: 0;
-    background: #BACDF2;
-    z-index: 1;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    padding: 3rem;
-}
-
-.navbarb a{
-    text-decoration: none;
-    color: #000;
-    padding: 0 1.5rem;
-}
-
-.navbarb a:hover{
-    color: #fff;
+.events-content{
+    height: 100vh;
+    padding: 0 3rem calc((100vw - 1300px)/2);
 }
 
 .team-building{
     font-family: "Julius Sans One", sans-serif;
     font-size: 50px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 40px;
 }
 
@@ -123,82 +106,7 @@
     margin-right: 40px;
 }
 
-.solar{
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-
-}
-
-.solar-date{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 3px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.solar-descp{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.move{
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-
-}
-
-.move-date{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 3px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.move-descp{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.halloween{
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-
-}
-
-.halloween-date{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 3px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.halloween-descp{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.kimchi{
+.event h1{
     font-family: "Julius Sans One", sans-serif;
     font-size: 45px;
     margin-top: 30px;
@@ -206,7 +114,7 @@
     margin-right: 40px;
 }
 
-.lunch-date{
+.event .date{
     font-family: "Jost", sans-serif;;
     font-size: 20px;
     margin-top: 3px;
@@ -214,50 +122,10 @@
     margin-right: 40px;
 }
 
-.trucks{
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
+.event .desc{
+    font-family: "Jost", sans-serif;;
+    font-size: 20px;
     margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.food-date{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 3px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.party{
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.house-date{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 3px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.poster{
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.poster-date{
-    font-family: "Jost", sans-serif;;
-    font-size: 20px;
-    margin-top: 3px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -292,20 +160,20 @@
 
 .gallery2__item--1{
         grid-column-start: 1;
-        grid-column-end: 8;
+        grid-column-end: 4;
         grid-row-start: 1;
-        grid-row-end: 8;
-}
-
-.gallery2__item--2{
-    grid-column-start: 1;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 8;
+        grid-row-end: 5;
 }
 
 .gallery2__item--3{
     grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.gallery2__item--2{
+    grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 8;

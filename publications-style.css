@@ -65,12 +65,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .logo{
     color: #000;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: normal;
     font-style: normal;
     margin-right: 80px;
@@ -83,28 +83,6 @@
 }
 
 .navbar a:hover{
-    color: #fff;
-}
-
-.navbarb{
-    height: 80px;
-    bottom: 0;
-    background: #BACDF2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    padding: 3rem;
-}
-
-.navbarb a{
-    text-decoration: none;
-    color: #000;
-    padding: 0 1.5rem;
-}
-
-.navbarb a:hover{
     color: #fff;
 }
 

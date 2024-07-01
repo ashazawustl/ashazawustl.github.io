@@ -65,12 +65,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .logo{
     color: #000;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: normal;
     font-style: normal;
     margin-right: 80px;
@@ -84,36 +84,6 @@
 
 .navbar a:hover{
     color: #fff;
-}
-
-.navbarb{
-    height: 80px;
-    bottom: 0;
-    background: #BACDF2;
-    z-index: 1;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    padding: 3rem;
-}
-
-.navbarb a{
-    text-decoration: none;
-    color: #000;
-    padding: 0 1.5rem;
-}
-
-.navbarb a:hover{
-    color: #fff;
-}
-
-.hero{
-    background: #fff;
-}
-
-.container{
-    display: flex;
 }
 
 .img-container{
@@ -188,6 +158,53 @@
 .map{
     margin-left:40px;
     margin-bottom:50px;
+}
+
+.footer{
+    background-color: #BACDF2;
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: normal;
+    display: flex;
+    unicode-bidi: isolate;
+    box-sizing: inherit;
+    margin-top: 60px;
+}
+
+.all-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+.signature-logo-date-container{
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.top-grid-cell{
+    flex-grow: 3;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-bottom:0px;
+    padding-right: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    max-width: 100%;
+    font-size: 16px;
 }
 
 .footer-details{

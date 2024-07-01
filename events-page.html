@@ -2,7 +2,7 @@
 <html lang = "en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="event-page-style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" >
@@ -18,46 +18,30 @@
 
     
     <title>Events</title>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function(){
-      $('#eclipseCarousel').carousel({
-        interval: 2000
-        });
-      });   
-    </script>
 
     </head>
 
     <body>
-        <div class = "navbar">
-            <div class= "logo"> OVIEDO LAB </div>
-            <div class = "nav-items">
-                <a href = "index.html">Home</a>
-                <div class = "dropdown">
-                  <button class = "dropbtn">  Research </button>
-                  <div class = "dropdown-content">
-                    <a href = "electro-page.html">Electrophysiology</a>
-                    <a href = "behavior-page.html">Behavior</a>
-                    <a href = "imaging-page.html">Imaging</a>
-                  </div>
-                </div>
-                <a href = "publications-page.html">Publications</a>
-                <a href = "team-page.html">Team</a>
-                <a href = "events-page.html">Events</a>
-                <a href = "openings-page.html">Openings</a>
+      <div class = "navbar">
+        <div class= "logo"> OVIEDO LAB </div>
+        <div class = "nav-items">
+            <a href = "index.html">Home</a>
+            <div class = "dropdown">
+              <button class = "dropbtn">  Research </button>
+              <div class = "dropdown-content">
+                <a href = "electro-page.html">Electrophysiology</a>
+                <a href = "behavior-page.html">Behavior</a>
+                <a href = "imaging-page.html">Imaging</a>
+              </div>
             </div>
-          </div>
-          <!--
- <div class = "navbarb">
-            <div> Last Updated: June 2024 </div>
+            <a href = "publications-page.html">Publications</a>
+            <a href = "team-page.html">Team</a>
+            <a href = "events-page.html">Events</a>
+            <a href = "openings-page.html">Openings</a>
         </div>
-          -->
-       
-        <div class ="events-content">
-            <section class="events-container">
-                <article>
+      </div>
+            <div class="events-content">
+
                     <h1 class = "team-building">
                         TEAM BUILDING AND COMMUNITY
                     </h1>
@@ -68,18 +52,20 @@
                         elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                         ullamco laboris nisi ut.
                     </p>
-                    <section class = "kimchiguys">
-                      <h1 class = "kimchi"> Team Lunch at Kimchi Guys</h1>
-                      <p class = "lunch-date">2024</p>
+
+                    <section class = "event">
+                      <h1 > Team Lunch at Kimchi Guys</h1>
+                      <p class = "date">2024</p>
                       <div class = "gallery1">
                         <figure class= "gallery1__item gallery1__item--1">
                         <img src = "events-page-assets/kimchi-guys-2024/IMG_8979.PNG" class = "gallery__img" alt = "Image 1">
                         </figure>
                       </div>
                     </section>
-                    <section class = "food-trucks">
-                      <h1 class = "trucks"> Food Truck Day at Med Campus</h1>
-                      <p class = "food-date">2024 </p>
+
+                    <section class = "event">
+                      <h1> Food Truck Day at Med Campus</h1>
+                      <p class = "date">2024 </p>
 
                       <div class = "gallery2">
                         <figure class= "gallery2__item gallery2__item--1">
@@ -93,50 +79,78 @@
                         </figure>
                       </div>
                     </section>
-                    <section class = "house-warming">
-                      <h1 class = "party"> House Warming Party at the Oviedo Residence</h1>
-                      <p class = "house-date">2024 </p>
+
+                    <section class = "event">
+                      <h1> House Warming Party at the Oviedo Residence</h1>
+                      <p class = "date">2024 </p>
                     </section>
-                    <section class = "presentation">
-                      <h1 class = "poster"> Demetri Presents Poster at Research Symposium</h1>
-                      <p class = "poster-date">202?</p>
+                    <section class = "event">
+                      <h1> Demetri Presents Poster at Research Symposium</h1>
+                      <p class = "date">202?</p>
                     </section>
-                    <section class ="solar-eclipse">
-                      <h1 class = "solar">
+
+                    <section class ="event">
+                      <h1>
                         2024 Solar Eclipse at the St. Louis Art Museum
                     </h1>
-                    <p class = "solar-date"> 
+                    <p class = "date"> 
                         April 8th 2024
                     </p>
-                    <p class = "solar-descp">
+                    <p class = "desc">
                         The St. Louis Art Museum is a museum in Forest Park, less than 10 minutes from the lab! The lab members enjoyed some local
                          pizza while watching the solar eclipse reach near totality.
                     </p>
                     </section>
-                  <section class = "NBD-move">
-                    <h1 class = "move">
+
+                  <section class = "event">
+                    <h1>
                       On the Move
                   </h1>
-                  <p class = "move-date"> 
+                  <p class = "date"> 
                       July 7th 2023
                   </p>
-                  <p class = "move-descp">
+                  <p class = "desc">
                       The Oviedo Lab will be moving to Washington University's Department of Neuroscience in the Fall of 2023!
                   </p>
                   </section>
-                  <section class = "2021-halloween">
-                    <h1 class = "halloween">
+
+                  <section class = "event">
+                    <h1>
                       Halloween trip to the cloisters
                   </h1>
-                  <p class = "halloween-date"> 
+                  <p class = "date"> 
                       October 31st 2021
                   </p>
-                  <p class = "halloween-descp">
+                  <p class = "desc">
                       The Cloisters is a museum in the Washington Heights neighborhood of Manhattan, nearby to the City College campus. The lab members went for a fun outing and photo opportunity for Halloween, 2021!
                   </p>
-                  </section>
-                </article>
-            </section>
-         </div>    
+                  </section>  
+              </div> 
+              
+         <section class  = "footer">
+          <div class = "all-container">
+              <div class = "signature-logo-date-container">
+                  <div class = "sig-logo-date-nobox-container">
+                      <div class = "logo-grid-container">
+                          <div class = "top-grid-cell">
+                              <div class = "footer-details">
+                                  <p style = "margin:0">
+                                      <span> 2024 Oviedo Lab </span>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class = "middle-grid-cell">
+                              <svg viewbox = "0 0 24 24" fill = "currentColor" width = "40px" height = "40px" class = "logo"></svg>
+                          </div>
+                      </div>
+                      <div class = "bottom-grid-cell">
+                          <p class = "footer-date">
+                              <span>Last Updated July 2024</span>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section> 
      </body>
  </html>
