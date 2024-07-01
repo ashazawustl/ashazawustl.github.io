@@ -65,12 +65,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .logo{
     color: #000;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: normal;
     font-style: normal;
     margin-right: 80px;
@@ -243,8 +243,109 @@
     border-radius: 43px;
 }
 
+.footer{
+    background-color: #BACDF2;
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: normal;
+    display: flex;
+    unicode-bidi: isolate;
+    box-sizing: inherit;
+    margin-top: 60px;
+}
+
+.all-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+.signature-logo-date-container{
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.top-grid-cell{
+    flex-grow: 3;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-bottom:0px;
+    padding-right: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    max-width: 100%;
+    font-size: 16px;
+}
+
+.footer-details{
+    color: black;
+    line-height: 1.5;
+    font-weight: 400px;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.footer-details p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.bottom-grid-cell{
+    flex-grow: 3;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-bottom:10px;
+    padding-right: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    max-width: 100%;
+    font-size: 16px;
+}
+
+.footer-date{
+    color: black;
+    line-height: 1.5;
+    font-weight: 400px;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.footer-date p{
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 @media screen and (max-width:768px){
     .hero-container{
         grid-template-columns: 1fr;
+    }
+    .footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
