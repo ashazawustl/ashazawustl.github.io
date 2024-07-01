@@ -223,6 +223,7 @@ section{
     unicode-bidi: isolate;
     box-sizing: inherit;
     margin-top: 60px;
+    height: 7rem;
 }
 
 .all-container{
