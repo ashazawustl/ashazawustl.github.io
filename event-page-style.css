@@ -58,7 +58,6 @@
     display:block;
 }
 
-
 .navbar{
     height: 80px;
     background: #BACDF2;
@@ -86,8 +85,17 @@
     color: #fff;
 }
 
+.hero{
+    background: #fff;
+}
+
+.container{
+    display: flex;
+}
+
 .events-content{
-    height: 100vh;
+    display: grid;
+    height: 95vh;
     padding: 0 3rem calc((100vw - 1300px)/2);
 }
 
@@ -277,6 +285,10 @@
 }
 
 @media screen and (max-width: 768px){
+    .events-content{
+        grid-template-columns: 1fr;
+    }
+
     .footer{
         padding-top: 40px;
         padding-bottom: 40px;
