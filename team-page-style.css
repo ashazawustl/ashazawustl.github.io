@@ -151,18 +151,19 @@ h2{
 .past-members-section{
     background-color: white;
     margin-top: 20px;
-    height: 130vh;
+    height: 120vh;
 }
 
 .past-members-names{
-    margin-left: 15px;
+    margin-left: 40px;
     margin-right: 15px;
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px 5px;
-    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px 0px;
+    width: 95%;
+    height: 50%
 }
 
 .footer{

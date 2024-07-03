@@ -96,19 +96,18 @@
 .events-content{
     display: grid;
     height: 95vh;
-    padding: 0 3rem calc((100vw - 1300px)/2);
 }
 
 .team-building{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 40px;
     margin-left: 40px;
 }
 
 .comm-descp{
     font-family: "Jost", sans-serif;;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -116,7 +115,7 @@
 
 .event h1{
     font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -124,25 +123,27 @@
 
 .event .date{
     font-family: "Jost", sans-serif;;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 3px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 30px;
 }
 
 .event .desc{
     font-family: "Jost", sans-serif;;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 30px;
 }
 
 .gallery1{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
 .gallery__img {
@@ -154,7 +155,7 @@
 
 .gallery1__item--1 {
     grid-column-start: 1;
-    grid-column-end: 8;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 8;
 }
@@ -163,7 +164,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
 .gallery2__item--1{
@@ -187,6 +188,134 @@
     grid-row-end: 8;
 }
 
+.gallery3{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery3__item--1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.gallery4{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery4__item--1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.gallery4__item--2{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.gallery5{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery5__item--1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.gallery5__item--2{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.gallery6{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 10px;
+}
+
+.gallery6__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.gallery7{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery7__item--1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery7__item--7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gallery7__item--3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.gallery7__item--4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.gallery7__item--5{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.gallery7__item--6{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.gallery7__item--2{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    object-fit: fill;
+}
+
+
 .footer{
     background-color: #BACDF2;
     font-size: 16px;
@@ -196,6 +325,7 @@
     unicode-bidi: isolate;
     box-sizing: inherit;
     margin-top: 60px;
+    height: 7rem;
 }
 
 .all-container{
@@ -283,6 +413,7 @@
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
+
 
 @media screen and (max-width: 768px){
     .events-content{
