@@ -93,7 +93,7 @@
 .hero-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 95vh;
+    height: auto;
     padding: 0 3rem calc((100vw - 1300px)/2);
 }
 

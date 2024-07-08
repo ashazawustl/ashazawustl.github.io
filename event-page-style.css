@@ -95,7 +95,7 @@
 
 .events-content{
     display: grid;
-    height: 95vh;
+    height: auto;;
 }
 
 .team-building{

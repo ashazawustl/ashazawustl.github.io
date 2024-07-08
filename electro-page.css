@@ -103,6 +103,7 @@
 
 .content{
     display: flex;
+    height: auto;
 }
 
 .left-side{

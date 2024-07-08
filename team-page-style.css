@@ -89,7 +89,7 @@
 .current-members-section{
     background-color: #e4ecfd;
     margin-top: 20px;
-    height: 150vh;
+    height: auto;
 }
 
 .current-members-title{
@@ -101,18 +101,17 @@
 }
 
 .current-members-photos{
-    margin-left : 170px;
-    margin-right : 170px;
+
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 30px 20px;
-    width: 200px;
+    grid-gap: auto;
+    width: auto;
 }
 
 .grid-item{
-    padding: 30px;
+    padding: 50px;
 }
 
 img{
@@ -151,7 +150,7 @@ h2{
 .past-members-section{
     background-color: white;
     margin-top: 20px;
-    height: 120vh;
+    height: 100vh;
 }
 
 .past-members-names{
