@@ -1,39 +1,142 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="home-page-style.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<html lang="en">
 
-    <title>Oviedo Lab</title>
-    </head>
-  <body>
-    <div class = "navbar">
-        <div class= "logo"> OVIEDO LAB </div>
-        <div class = "nav-items">
-            <a href = "index.html">Home</a>
-            <div class = "dropdown">
-              <button class = "dropbtn">  Research </button>
-              <div class = "dropdown-content">
-                <a href = "electro-page.html">Electrophysiology</a>
-                <a href = "behavior-page.html">Behavior</a>
-                <a href = "imaging-page.html">Imaging</a>
-              </div>
-            </div>
-            <a href = "publications-page.html">Publications</a>
-            <a href = "team-page.html">Team</a>
-            <a href = "events-page.html">Events</a>
-            <a href = "openings-page.html">Openings</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="behavior-page.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Oviedo Lab</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo"> OVIEDO LAB </div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn"> Research </button>
+        <div class="dropdown-content">
+          <a href="electro-page.html">Electrophysiology</a>
+          <a href="behavior-page.html">Behavior</a>
+          <a href="imaging-page.html">Imaging</a>
         </div>
       </div>
-    <div class = "navbarb">
-      <div> Last Updated: June 2024 </div>
+      <a href="publications-page.html">Publications</a>
+      <a href="team-page.html">Team</a>
+      <a href="events-page.html">Events</a>
+      <a href="openings-page.html">Openings</a>
     </div>
+  </div>
+  <div class="electro_img">
+    <img src="/behavior-page-assets/mindset-programmer-machine-learning-brain-mind-think-1440817-pxhere.com.jpg"
+      class="heading_img" alt="Image1">
+    <div class="page-title"> BEHAVIOR </div>
+  </div>
+  <div class="content">
+    <div class="subsec-cont">
+      <p class="descp">An animal’s brain must perform the challenging tasks of recognizing, categorizing, and assigning
+        communicative
+        importance to sounds. We use behavioral tasks to test the auditory perceptual abilities of rodents to gain
+        mechanistic insight into their communicative functions. In the video clip below we show an example of a mouse
+        performing a 2-alternative forced choice task to discriminate two tones.</p>
+    </div>
+  </div>
+  
+  <div class="carousel">
+    <div
+      class="carousel-scroll-container"
+      role="region"
+      aria-label="Image carousel"
+      tabindex="0"
+    >
+      <ol class="carousel-media" role="list">
+        <li class="carousel-item">
+          <img
+            src="..."
+            alt="..."
+            width="..."
+            height="..."
+            loading="lazy"
+            decoding="async">
+        </li>
+        <!-- more images can go here -->
+      </ol>
+    </div>
+  </div>
+  
+
+  <template id="carousel-controls">
+    <ol role="list" class="carousel-controls" aria-label="Navigation controls">
+      <li>
+        <button
+          class="carousel-control"
+          aria-label="Previous"
+          data-direction="start"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button class="carousel-control" aria-label="Next" data-direction="end">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </li>
+    </ol>
+  </template>
+
+  <section class="footer">
+    <div class="all-container">
+      <div class="signature-logo-date-container">
+        <div class="sig-logo-date-nobox-container">
+          <div class="logo-grid-container">
+            <div class="top-grid-cell">
+              <div class="footer-details">
+                <p style="margin:0">
+                  <span> 2024 Oviedo Lab </span>
+                </p>
+              </div>
+            </div>
+            <div class="middle-grid-cell">
+              <svg viewbox="0 0 24 24" fill="currentColor" width="40px" height="40px" class="logo"></svg>
+            </div>
+          </div>
+          <div class="bottom-grid-cell">
+            <p class="footer-date">
+              <span>Last Updated July 2024</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

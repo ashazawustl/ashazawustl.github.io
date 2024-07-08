@@ -1,0 +1,236 @@
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jost-regualar {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Julius Sans One", "Jost", sans-serif;
+}
+
+.dropbtn{
+    background-color: #BACDF2;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown:hover .dropbtn {
+    background: rgb(86, 118, 176);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #BACDF2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.dropdown-content a:hover{
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+.navbar{
+    height: 80px;
+    background: #BACDF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-right: 80px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+.navbar a:hover{
+    color: #fff;
+}
+
+.heading_img{
+    height: 350px;
+    width: 100%;
+}
+
+.page-title{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: white;
+}
+
+.content{
+    display: flex;
+}
+
+.left-side{
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 50%;;
+    float: left;
+}
+
+.subheading{
+    margin-bottom: 30px;
+}
+
+p{
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+}
+
+.right-side{
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 50%;
+    float: right;
+}
+
+.footer{
+    background-color: #BACDF2;
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: normal;
+    display: flex;
+    unicode-bidi: isolate;
+    box-sizing: inherit;
+    margin-top: 60px;
+}
+
+.all-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+.signature-logo-date-container{
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.top-grid-cell{
+    flex-grow: 3;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-bottom:0px;
+    padding-right: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    max-width: 100%;
+    font-size: 16px;
+}
+
+.footer-details{
+    color: black;
+    line-height: 1.5;
+    font-weight: 400px;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.footer-details p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.bottom-grid-cell{
+    flex-grow: 3;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-bottom:10px;
+    padding-right: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    max-width: 100%;
+    font-size: 16px;
+}
+
+.footer-date{
+    color: black;
+    line-height: 1.5;
+    font-weight: 400px;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.footer-date p{
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+@media screen and (max-width:768px){
+    .hero-container{
+        grid-template-columns: 1fr;
+    }
+    .footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

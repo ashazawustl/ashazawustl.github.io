@@ -1,39 +1,90 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="home-page-style.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<html lang="en">
 
-    <title>Oviedo Lab</title>
-    </head>
-  <body>
-    <div class = "navbar">
-        <div class= "logo"> OVIEDO LAB </div>
-        <div class = "nav-items">
-            <a href = "index.html">Home</a>
-            <div class = "dropdown">
-              <button class = "dropbtn">  Research </button>
-              <div class = "dropdown-content">
-                <a href = "electro-page.html">Electrophysiology</a>
-                <a href = "behavior-page.html">Behavior</a>
-                <a href = "imaging-page.html">Imaging</a>
-              </div>
-            </div>
-            <a href = "publications-page.html">Publications</a>
-            <a href = "team-page.html">Team</a>
-            <a href = "events-page.html">Events</a>
-            <a href = "openings-page.html">Openings</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="imaging-page.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Oviedo Lab</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo"> OVIEDO LAB </div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn"> Research </button>
+        <div class="dropdown-content">
+          <a href="electro-page.html">Electrophysiology</a>
+          <a href="behavior-page.html">Behavior</a>
+          <a href="imaging-page.html">Imaging</a>
         </div>
       </div>
-    <div class = "navbarb">
-      <div> Last Updated: June 2024 </div>
+      <a href="publications-page.html">Publications</a>
+      <a href="team-page.html">Team</a>
+      <a href="events-page.html">Events</a>
+      <a href="openings-page.html">Openings</a>
     </div>
+  </div>
+  <div class="electro_img">
+    <img src="/imaging-page-assets/Patient_r_brain_scan.png" class="heading_img" alt="Image1">
+    <div class="page-title"> Imaging </div>
+  </div>
+  <h1 class="subheading">3D brain volume imaging using the tissue clearing technique iDISCO and Fos immunostaining</h1>
+  <div class="content">
+    <div class="left-side">
+      <figure>
+        <video width="100%" height="100%" controls="controls">
+          <source src="/imaging-page-assets/sweeps.mp4" type="video/mp4" />
+          <figcaption> Brain activation in response to frequency sweeps</figcaption>
+        </video>
+      </figure>
+    </div>
+    <div class="right-side">
+      <figure>
+        <video width="100%" height="100%" controls="">
+          <source src="/imaging-page-assets/vocal.mov" type="video/mp4" />
+          <figcaption>Brain activation in response to mouse vocalizations</figcaption>
+        </video>
+      </figure>
+    </div>
+  </div>
+  <section class="footer">
+    <div class="all-container">
+      <div class="signature-logo-date-container">
+        <div class="sig-logo-date-nobox-container">
+          <div class="logo-grid-container">
+            <div class="top-grid-cell">
+              <div class="footer-details">
+                <p style="margin:0">
+                  <span> 2024 Oviedo Lab </span>
+                </p>
+              </div>
+            </div>
+            <div class="middle-grid-cell">
+              <svg viewbox="0 0 24 24" fill="currentColor" width="40px" height="40px" class="logo"></svg>
+            </div>
+          </div>
+          <div class="bottom-grid-cell">
+            <p class="footer-date">
+              <span>Last Updated July 2024</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
