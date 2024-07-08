@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
   <div class="navbar">
     <div class="logo"> OVIEDO LAB </div>
     <div class="nav-items">
@@ -51,66 +52,51 @@
         performing a 2-alternative forced choice task to discriminate two tones.</p>
     </div>
   </div>
-  
+
   <div class="carousel">
-    <div
-      class="carousel-scroll-container"
-      role="region"
-      aria-label="Image carousel"
-      tabindex="0"
-    >
-      <ol class="carousel-media" role="list">
-        <li class="carousel-item">
-          <img
-            src="..."
-            alt="..."
-            width="..."
-            height="..."
-            loading="lazy"
-            decoding="async">
-        </li>
-        <!-- more images can go here -->
-      </ol>
+    <div class="carousel__item carousel__item--visible">
+      <video width="100%" height="100%" controls="controls">
+        <source src="/behavior-page-assets/video1247817895.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel__item">
+      <video width="100%" height="100%" controls="controls">
+        <source src="/behavior-page-assets/video1329987672.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel__item">
+      <video width="100%" height="100%" controls="controls">
+        <source src="/behavior-page-assets/video2247817895.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel__item">
+      <video width="100%" height="100%" controls="controls">
+        <source src="/behavior-page-assets/video2329987672.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel__item">
+      <video width="100%" height="100%" controls="controls">
+        <source src="/behavior-page-assets/video3247817895.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel__item">
+      <video width="100%" height="100%" controls="controls">
+        <source src="/behavior-page-assets/video3329987672.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel__item">
+      <video width="100%" height="100%" controls="controls">
+        <source src="/behavior-page-assets/video4247817895.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="carousel__actions">
+      <button id="carousel__button--prev" aria-label = "Previous"><</button>
+      <button id="carousel__button--next" aria-label = "Next">></button>
     </div>
   </div>
-  
 
-  <template id="carousel-controls">
-    <ol role="list" class="carousel-controls" aria-label="Navigation controls">
-      <li>
-        <button
-          class="carousel-control"
-          aria-label="Previous"
-          data-direction="start"
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button class="carousel-control" aria-label="Next" data-direction="end">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </button>
-      </li>
-    </ol>
-  </template>
+  <script src = "app.js"></script>
 
   <section class="footer">
     <div class="all-container">

@@ -127,97 +127,54 @@
     color: white;
 }
 
-.carousel [role='list'] {
-    padding: 0;
-    list-style: none;
-}
-
-.carousel-scroll-container {
-    /* Enable horizontal scrolling */
-    overflow-x: auto;
-    /* Enable horizontal scroll snap */
-    scroll-snap-type: x proximity;
-    /* Smoothly snap from one focal point to another */
-    scroll-behavior: smooth;
-}
-
-.carousel-media {
-    /* Arrange media horizontally */
-    display: flex;
-}
-
-.carousel-item {
-    /* Limit the height of each media item */
-    height: 300px;
-    /* Prevent media from shrinking */
-    flex-shrink: 0;
-    /* The focal point for each item is the center */
-    scroll-snap-align: center;
-}
-
-.carousel-item:first-of-type {
-    /* Allow users to fully scroll to the start */
-    scroll-snap-align: start;
-}
-
-.carousel-item:last-of-type {
-    /* Allow users to fully scroll to the end */
-    scroll-snap-align: end;
-}
-
-.carousel-item>*,
-.carousel-item :is(picture, figure, img) {
-    height: 100%;
-}
-
-.carousel-item img {
-    /* Remove line height (typically done in a CSS reset) */
-    display: block;
-    /* Responsive width based on aspect ratio */
-    width: auto;
-}
-
 .carousel {
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+    max-width: 600px;
     position: relative;
 }
 
-.carousel-control {
-    --offset-x: 0;
-    cursor: pointer;
-    /* Anchor the controls relative to the outer wrapper */
+.carousel .carousel__item,
+.carousel .carousel__item--hidden{
+    display:none;
+}
+
+.carousel .carousel__item video{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel__item--visible{
+    display:block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel__actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     position: absolute;
-    /* Center the controls vertically */
     top: 50%;
     transform: translateY(-50%);
 }
 
-/* Don't allow icons to be event targets */
-.carousel-control * {
-    pointer-events: none;
+.carousel .carousel__actions button{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
-.carousel-control[data-direction="start"] {
-    /* Same as left in LTR and right in RTL */
-    inset-inline-start: var(--offset-x);
+.carousel .carousel__actions button#carousel__button--prev{
+    margin-left: 10px;
 }
 
-.carousel-control[data-direction="end"] {
-    /* Same as right in LTR and left in RTL */
-    inset-inline-end: var(--offset-x);
-}
-
-.carousel-control[aria-disabled='true'] {
-    filter: opacity(0.5);
-    cursor: not-allowed;
-}
-
-
-.right-side {
-    margin-right: 40px;
-    margin-top: 30px;
-    margin-left: 40px;
-    width: 50%;
-    float: right;
+.carousel .carousel__actions button#carousel__button--next{
+    margin-right: 10px;
 }
 
 .footer {
@@ -315,6 +272,16 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+}
+
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
 }
 
 @media screen and (max-width:768px) {
