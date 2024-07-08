@@ -150,7 +150,7 @@ h2{
 .past-members-section{
     background-color: white;
     margin-top: 20px;
-    height: 100vh;
+    height: auto;
 }
 
 .past-members-names{
