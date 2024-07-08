@@ -91,7 +91,10 @@
 }
 
 .building-pic{
-    text-align: center;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    /* text-align: center;
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -99,13 +102,14 @@
     margin-right: auto;
     border-radius: 43px;
     width: 475px;
-    height: 412px;
+    height: 412px; */
 
 }
 
 .description{
     font-family: "Jost", sans-serif;
     font-size: 15px;
+    margin-top: 30px;
     margin-bottom: 20px;
     margin-left:40px;
     margin-right: 30px;
