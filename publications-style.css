@@ -66,6 +66,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .logo{
@@ -115,9 +116,11 @@ hr {
     font-size: 30px;
     text-align: left; 
 }
+
 section{
-    height: 35vh;
+    height: 40vh;
 }
+
 .tag{
     opacity: 0;
     transform: translate(0,10vh);

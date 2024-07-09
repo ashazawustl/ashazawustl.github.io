@@ -66,6 +66,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .logo{
@@ -87,14 +88,15 @@
 }
 
 .heading_img{
-    height: 350px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
+    position: relative;
 }
 
 .page-title{
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 45px;
@@ -121,7 +123,7 @@
 
 p{
     font-family: "Jost", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 figcaption{
