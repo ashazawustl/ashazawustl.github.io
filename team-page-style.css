@@ -204,6 +204,7 @@ h2{
     unicode-bidi: isolate;
     box-sizing: inherit;
     margin-top: 60px;
+    box-sizing: inherit;
 }
 
 .all-container{
@@ -213,6 +214,7 @@ h2{
     padding-right: 24px;
     padding-left: 24px;
     font-size: 16px;
+    
 }
 
 .signature-logo-date-container{
