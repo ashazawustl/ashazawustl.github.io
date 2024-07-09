@@ -18,16 +18,17 @@
     font-family: "Julius Sans One", "Jost", sans-serif;
 }
 
+
 .dropbtn {
-    background-color: #BACDF2;
-    color: black;
+    background-color: #faad4e;
+    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
 }
 
 .dropdown:hover .dropbtn {
-    background: rgb(86, 118, 176);
+    background: #fad24e;
 }
 
 .dropdown {
@@ -38,7 +39,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #BACDF2;
+    background-color: #FFBD6F;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -46,7 +47,7 @@
 
 .dropdown-content a {
     text-decoration: none;
-    color: #000;
+    color: white;
     padding: 0 1.5rem;
 }
 
@@ -61,16 +62,16 @@
 
 .navbar {
     height: 80px;
-    background: #BACDF2;
+    background: #faad4e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .logo {
-    color: #000;
+    color: white;
     font-size: 1.5rem;
     font-weight: normal;
     font-style: normal;
