@@ -345,6 +345,12 @@ section{
     text-align: center;
 }
 
+.middle-grid-cell img{ 
+    display: flex;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+
 .footer-date p{
     display: flex;
     margin-block-start: 1em;

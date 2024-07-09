@@ -144,7 +144,7 @@
     padding: 50px;
 }
 
-img{
+.grid-item img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -205,6 +205,7 @@ h2{
     box-sizing: inherit;
     margin-top: 60px;
     box-sizing: inherit;
+    height: auto;
 }
 
 .all-container{
@@ -292,6 +293,13 @@ h2{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+}
+
+.middle-grid-cell img{ 
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 75px;
 }
 
 @media screen and (max-width:768px){

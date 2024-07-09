@@ -435,6 +435,12 @@
     unicode-bidi: isolate;
 }
 
+.middle-grid-cell img{ 
+    display: flex;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+
 
 @media screen and (max-width: 768px){
     .events-content{
