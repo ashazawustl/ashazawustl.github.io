@@ -118,7 +118,7 @@
 }
 
 .current-members-section{
-    background-color: #e4ecfd;
+    background-color: #ffffe0;
     margin-top: 20px;
     height: auto;
 }
@@ -198,7 +198,7 @@ h2{
 
 
 .footer{
-    background-color: #BACDF2;
+    background-color: #faad4e;
     font-size: 16px;
     text-transform: none;
     letter-spacing: normal;
@@ -248,7 +248,7 @@ h2{
 }
 
 .footer-details{
-    color: black;
+    color: white;
     line-height: 1.5;
     font-weight: 400px;
     font-size: 14px;
@@ -280,7 +280,7 @@ h2{
 }
 
 .footer-date{
-    color: black;
+    color: white;
     line-height: 1.5;
     font-weight: 400px;
     font-size: 14px;

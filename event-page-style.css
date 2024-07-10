@@ -340,7 +340,7 @@
 
 
 .footer{
-    background-color: #BACDF2;
+    background-color: #faad4e;
     font-size: 16px;
     text-transform: none;
     letter-spacing: normal;
@@ -388,7 +388,7 @@
 }
 
 .footer-details{
-    color: black;
+    color: white;
     line-height: 1.5;
     font-weight: 400px;
     font-size: 14px;
@@ -420,7 +420,7 @@
 }
 
 .footer-date{
-    color: black;
+    color: white;
     line-height: 1.5;
     font-weight: 400px;
     font-size: 14px;

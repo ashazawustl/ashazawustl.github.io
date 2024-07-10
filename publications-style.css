@@ -126,9 +126,8 @@
     margin-bottom: 30px;
 }
 
-.page-sections h1{
-    margin: 0;
-    padding: 0;
+a{
+    color: white;
 }
 
 hr {
@@ -143,9 +142,12 @@ hr {
 }
 
 .page-sections h1{
+    margin: 0;
+    padding: 0;
     font-family: "Julius Sans One", sans-serif;
     font-size: 30px;
     text-align: left; 
+    color: white;
 }
 
 section{
@@ -157,13 +159,16 @@ section{
     transform: translate(0,10vh);
     transition: all 1s;
 }
+
 .page-sections .tag.visible{
     opacity: 1;
     transform: translate(0,0);
 }
+
 .twenty24{
-    background-color: #F0FFFF;
+    background-color: #ffdb58;
 }
+
 .page-sections h1{
     margin-left: 10rem;
     margin-top: 30px;
@@ -176,23 +181,27 @@ section{
     font-size: 20px;
     margin-right: 10rem;
 }
+
 .twenty24 p{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
     margin-left: 10rem;
+    color: white;
 }
 .twenty22 .twenty22-list{
     margin-top: 30px;
     margin-left: 10rem;
     font-size: 20px;
     margin-right: 10rem;
+    color: white;
 }
 .twenty22 p{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
     margin-left: 10rem;
+    color: white;
 }
 .twenty21 .twenty21-list{
     font-family: "Jost", sans-serif;
@@ -205,6 +214,7 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
+    color: white;
 }
 .twenty20 .twenty20-list{
     margin-top: 30px;
@@ -217,6 +227,7 @@ section{
     font-size: 15px;
     margin-top: 20px;
     margin-left: 10rem;
+    color: white;
 }
 .twenty19 .twenty19-list{
     margin-top: 30px;
@@ -229,11 +240,13 @@ section{
     font-size: 15px;
     margin-top: 20px;
     margin-left: 10rem;
+    color: white;
 }
 .twenty17-and-earlier p{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
+    color: white;
 }
 .twenty17-and-earlier .twenty17-list{
     margin-top: 30px;
@@ -242,24 +255,24 @@ section{
     margin-right: 10rem;
 }
 .twenty22{
-    background-color: #ADD8E6;
+    background-color: #ffbf00;
 }
 .twenty21{
-    background-color: #7393B3;
+    background-color: #f1b04c;
 }
 .twenty20{
-    background-color: #4682B4;
+    background-color: #ee9f27;
 }
 .twenty19{
-    background-color: #6082B6;
+    background-color: #ec9006;
 }
 .twenty17-and-earlier{
-    background-color: #F0FFFF;
+    background-color: #e88504;
     height: auto;
 }
 
 .footer{
-    background-color: #BACDF2;
+    background-color: #faad4e;
     font-size: 16px;
     text-transform: none;
     letter-spacing: normal;
@@ -307,7 +320,7 @@ section{
 }
 
 .footer-details{
-    color: black;
+    color: white;
     line-height: 1.5;
     font-weight: 400px;
     font-size: 14px;
@@ -339,7 +352,7 @@ section{
 }
 
 .footer-date{
-    color: black;
+    color: white;
     line-height: 1.5;
     font-weight: 400px;
     font-size: 14px;
