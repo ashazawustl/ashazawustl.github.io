@@ -1,16 +1,14 @@
-$(document).on("scroll", function() {
-    var pageTop = $(document).scrollTop();
-    var pageBottom = pageTop + $(window).height();
-    var tags = $(".tag");
-  
-    for (var i = 0; i < tags.length; i++) {
-      var tag = tags[i];
-  
-      if ($(tag).position().top < pageBottom) {
-        $(tag).addClass("visible");
-      } else {
-        $(tag).removeClass("visible");
-      }
-    }
-  });
-  
+const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
+
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
