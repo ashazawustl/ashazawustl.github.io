@@ -1,13 +1,13 @@
 .julius-sans-one-regular {
     font-family: "Julius Sans One", sans-serif;
-    font-weight: 400;
+    font-weight: 1000;
     font-style: normal;
 }
 
 .jost-regualar {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -235,13 +235,15 @@
 
 
 .navbar {
-    height: 80px;
+    height: 160px;
     background: #faad4e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
 }
 
 .logo {
@@ -290,16 +292,6 @@
     color: #fff;
 }
 
-.hero {
-    background: #fff;
-}
-
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    padding: 0 3rem calc((100vw - 1300px)/2);
-}
 
 .p {
     font-family: "Jost", sans-serif;
@@ -309,69 +301,139 @@
     margin-top: 15px;
 }
 
-.audio {
-    font-family: "Julius Sans One", sans-serif;
-    padding: 0.5rem;
-    font-size: 15px;
-}
-
-.analysis {
-    font-family: "Julius Sans One", sans-serif;
-    padding: 0.5rem;
-    font-size: 15px;
-}
-
-.rett {
-    font-family: "Julius Sans One", sans-serif;
-    padding: 0.5rem;
-    font-size: 15px;
-}
-
-.research {
-    font-family: "Julius Sans One", sans-serif;
-    padding: 0.7rem;
-    font-size: 20px;
-}
 
 .container {
-    display: flex;
+    display: relative;
+    z-index: 0;
 }
 
-.left-half {
-    background-color: #fff;
-    flex: 0.75;
-    margin-right: 30px;
-    margin-left: 40px;
-    margin-top: 50px;
-}
 
-.right-half {
-    background-color: #fff;
-    flex: 1;
-    margin-right: 30px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.name {
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 45px;
-}
-
-.degree {
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 35px;
-}
-
-.button1 {
+#button1 {
     margin-top: 20px;
     border-radius: 70px;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     font-size: 1rem;
     border: none;
     color: white;
     background: #faad4e;
     cursor: pointer;
+    display: block;
+    margin: auto;
+    letter-spacing: 6px;
+    
+}
+
+
+h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 100px;
+}
+
+h3 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 16px;
+}
+
+h4 {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#lab-name {
+    margin: auto;
+    padding: 2rem;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: lightyellow;
+    position: relative;
+}
+
+#what-we-study{
+    margin: auto;
+    padding: 2rem;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: white;
+    position: relative;
+}
+
+.study-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.lab-name-container {
+    position: absolute;
+    z-index: 0;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.study-content h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.study-content p{
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    line-height: 2rem;
+    font-size: 20px;
+    margin-top:20px;
+}
+
+.three-items{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: center;
+    width: 100%;
+    position: absolute;
+}
+
+.item img{
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+.item h3{
+    text-align-last: center;
+    letter-spacing: 2px;
+}
+
+.item p{
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+}
+
+.lab-name-content h3{
+    text-align-last: center;
+    letter-spacing: 2px;
+}
+
+.lab-name-content h1{
+    letter-spacing: 5px;
+}
+
+.lab-name-content h4{
+    letter-spacing: 2px;
+    text-align-last: center;
+}
+
+.lab-name-content img{
+    margin: auto;
+    display: flex;
 }
 
 .button1:hover {
@@ -379,15 +441,20 @@
     color: #fff;
 }
 
-.button2 {
+#button2 {
     margin-top: 10px;
-    border-radius: 70px;
-    padding: 1rem 3rem;
+    border-radius: 50%;
+    padding: 1rem 1rem;
     font-size: 1rem;
-    border: none;
-    color: white;
-    background: #faad4e;
+    border: 1px solid black;
+    color: black;
+    background: white;
     cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: -8rem;
 }
 
 .button2:hover {
@@ -395,34 +462,82 @@
     color: #fff;
 }
 
-.button3 {
+#how-we-do-it{
+    margin: auto;
+    padding: 2rem;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: white;
+    position: relative;
+    background-color:#faad4e;
+}
+
+.how-it-container{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-how-it{
+    font-size: 50px;
+    transform: translate(-50%,-200%);
+    margin-left: 6rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.five-items{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5rem;
+    width: 110%;
+    position:relative;
+    align-items: left;
+}
+
+.oneitem img{
+    margin: auto;
+    display: absolute;
+    margin-top: 30px;
+    align-items: left;
+}
+
+.oneitem h2{
+    text-align: left;
+    letter-spacing: 2px;
+    color: white
+}
+
+.oneitem p{
+    text-align: left;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    color: white
+}
+
+#button3 {
     margin-top: 10px;
-    border-radius: 70px;
-    padding: 1rem 3rem;
+    border-radius: 50%;
+    padding: 1rem 1rem;
     font-size: 1rem;
-    border: none;
+    border: 1px solid white;
     color: white;
     background: #faad4e;
     cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -2rem;
 }
 
 .button3:hover {
     background: #fad24e;
     color: #fff;
-}
-
-.column-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image {
-    width: 100%;
-    height: 50%;
-    padding: 0;
-    border-radius: 43px;
-    object-fit: cover;
 }
 
 .footer {
