@@ -14,24 +14,38 @@
 // navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 
-const goToMiddle =  document.geteElementById("botton1");
-const goToBottom = document.getElementById("button2");
-const goToTop = document.getElementById("button3");
 
-function middle(){
-  goToMiddle.addEventListener("click", () =>{
-    goToBottom.scrollIntoView({behavior: "smooth", block: "center"});
-  });
+function middle() {
+  // goToMiddle.addEventListener("click", () =>{
+  const goToMiddle = document.getElementById("what-we-study");
+  goToMiddle.scrollIntoView({ behavior: "smooth", block: "center" });
+  // });
 }
 
-function bottom(){
-  goToBottom.addEventListener("click", () =>{
-    goToTop.scrollIntoView({behavior: "smooth", block: "center"});
-  });
+function bottom() {
+  // goToBottom.addEventListener("click", () =>{
+  const goToBottom = document.getElementById("how-we-do-it");
+  goToBottom.scrollIntoView({ behavior: "smooth", block: "center" });
+  // });
 }
 
-function top(){
-  goToTop.addEventListener("click", () =>{
-    goToMiddle.scrollIntoView({behavior: "smooth", block: "center"});
-  });
+function toTop(){
+  const goToTop = document.getElementById("lab-name");
+  goToTop.scrollIntoView({behavior: "smooth", block: "center"});
 }
+
+// // window.onload(() =>{
+//   console.log("click")
+//   const goToTop = document.getElementById("button3");
+//   const topPage =  document.getElementById("lab-name");
+//   goToTop.addEventListener("click", () =>{
+//   topPage.scrollIntoView({ behavior: "smooth", block: "center" });
+//   });
+// // })
+
+// window.onload = (event) => {
+//   console.log("page is fully loaded");
+// };
+// function toTop() {
+  
+// }
