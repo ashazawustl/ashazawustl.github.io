@@ -16,17 +16,13 @@
 
 
 function middle() {
-  // goToMiddle.addEventListener("click", () =>{
   const goToMiddle = document.getElementById("what-we-study");
   goToMiddle.scrollIntoView({ behavior: "smooth", block: "center" });
-  // });
 }
 
 function bottom() {
-  // goToBottom.addEventListener("click", () =>{
   const goToBottom = document.getElementById("how-we-do-it");
   goToBottom.scrollIntoView({ behavior: "smooth", block: "center" });
-  // });
 }
 
 function toTop(){
@@ -34,18 +30,21 @@ function toTop(){
   goToTop.scrollIntoView({behavior: "smooth", block: "center"});
 }
 
-// // window.onload(() =>{
-//   console.log("click")
-//   const goToTop = document.getElementById("button3");
-//   const topPage =  document.getElementById("lab-name");
-//   goToTop.addEventListener("click", () =>{
-//   topPage.scrollIntoView({ behavior: "smooth", block: "center" });
-//   });
-// // })
 
-// window.onload = (event) => {
-//   console.log("page is fully loaded");
+
+//possible alternative method:
+// window.onload = function() {
+//   console.log('page loaded');
+//   const topButton = document.getElementById('button2');
+//   const bottomButton = document.getElementById('button3');
+
+//   topButton.addEventListener('click', function(){
+//       const bottomDiv = document.getElementById('how-we-do-it');
+//       bottomDiv.scrollIntoView({behavior: 'smooth', block: 'end'});
+//   });
+
+//   bottomButton.addEventListener('click', function(){
+//       const topDiv = document.getElementById('lab-name');
+//       topDiv.scrollIntoView({behavior: 'smooth', block: 'start'});
+//   });
 // };
-// function toTop() {
-  
-// }
