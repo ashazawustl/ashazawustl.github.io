@@ -52,8 +52,8 @@ body {
 }
 
 .navbar-logo {
-    width: 7%;
-    height: 7%;
+    width: 100px;
+    height: 100px;
     padding: .5%;
     margin-left: 2.5%;
 }
@@ -276,13 +276,13 @@ body {
     justify-content: center;
     top: 210vh;
     width: 210vh;
-    height: 115vh;
+    height: 90vh;
     background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
     position: absolute;
 }
 
 .how-it-content{
-    transform: translate(0%,-90%);
+    transform: translate(0%,-60%);
     margin-left: 10%;
 }
 
@@ -304,7 +304,6 @@ body {
 
 .title-how-it {
     font-size: 50px;
-    margin-left: 6rem;
     letter-spacing: 2px;
     color: black;
 }
@@ -352,5 +351,6 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
-    right: -2rem;
+    right: 0;
+    left:120%;
 }
