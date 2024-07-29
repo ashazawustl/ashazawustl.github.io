@@ -1,20 +1,3 @@
-// const navbarToggle = navbar.querySelector("#navbar-toggle");
-// const navbarMenu = document.querySelector("#navbar-menu");
-// const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
-// let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
-
-// const toggleNavbarVisibility = () => {
-//   isNavbarExpanded = !isNavbarExpanded;
-//   navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
-// };
-
-// navbarToggle.addEventListener("click", toggleNavbarVisibility);
-
-// navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
-// navbarMenu.addEventListener("click", toggleNavbarVisibility);
-
-
-
 function middle() {
   const goToMiddle = document.getElementById("what-we-study");
   goToMiddle.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -29,6 +12,75 @@ function toTop(){
   const goToTop = document.getElementById("lab-name");
   goToTop.scrollIntoView({behavior: "smooth", block: "center"});
 }
+
+// add padding top to show content behind navbar
+$('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+
+// detect scroll top or down
+if ($('.smart-scroll').length > 0) { // check if element exists
+    var last_scroll_top = 0;
+    $(window).on('scroll', function () {
+        scroll_top = $(this).scrollTop();
+        if (scroll_top < last_scroll_top) {
+            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+        }
+        else {
+            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+    });
+}
+
+
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.7
+};
+
+function observerCallback(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // fade in observed elements that are in view
+      entry.target.classList.replace('fadeOut', 'fadeIn');
+    } else {
+      // fade out observed elements that are not in view
+      entry.target.classList.replace('fadeIn', 'fadeOut');
+    }
+  });
+}
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+const fadeElms = document.querySelectorAll('.fade');
+fadeElms.forEach(el => observer.observe(el));
+
+
+// let options = {
+//   root: document.querySelector("#scrollArea"),
+//   rootMargin: "0px",
+//   threshold: 1.0,
+// };
+
+
+
+// function FadeInSection(props) {
+//   const [isVisible, setVisible] = React.useState(false);
+//   const domRef = React.useRef();
+//   React.useEffect(() => {
+//       const observer = new IntersectionObserver(entries => {
+//           entries.forEach(entry => setVisible(entry.isIntersecting));
+//       });
+//       observer.observe(domRef.current);
+//   }, []);
+//   return (
+//       <div
+//           className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+//           ref={domRef}
+//       >
+//           {props.children}
+//       </div>
+//   );
 
 
 

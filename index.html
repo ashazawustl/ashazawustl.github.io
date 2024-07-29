@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home-page-style.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script defer type = "text/javascript" src="/home-page.js"></script>
+    <script defer type="text/javascript" src="/home-page.js"></script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -19,201 +19,162 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 
     <title>Oviedo Lab</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" alt="site-logo"
-                class="site-logo" />
-            <div class="logo-label"> OVIEDO LAB</div>
-            <p class="logo-dscp"> Cortical Audio Processing </p>
-        </div>
-        <div class="nav-items">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn"> Research </button>
-                <div class="dropdown-content">
-                    <a href="electro-page.html">Electrophysiology</a>
-                    <a href="behavior-page.html">Behavior</a>
-                    <a href="imaging-page.html">Imaging</a>
-                </div>
-            </div>
-            <a href="publications-page.html">Publications</a>
-            <a href="team-page.html">Team</a>
-            <a href="events-page.html">Events</a>
-            <a href="openings-page.html">Openings</a>
-        </div>
-    </div>
 
-
-    <!-- <header id="navbar">
-        <nav class="navbar-container container">
-            <a href="index.html" class="home-link">
-                <div class="navbar-logo">
-                    <img src="/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" alt="site-logo"
-                        class="site-logo" />
-                    <div class="logo-label"> OVIEDO LAB</div>
-                    <p class="logo-dscp"> Cortical Audio Processing </p>
-                </div>
-            </a>
-            <button type="button" id="navbar-toggle" aria-controls="navbar-manue" aria-label="Toggle menu"
-                aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div id="navbar-menu" aria-labelledby="navbar-toggle">
-                <ul class="navbar-links">
-                    <li class="navbar-item"><a class="navbar-link" href="index.html"> Home </a></li>
-                    <li class="navbar-item">
-                        <div class="dropdown">
-                            <button class="dropbtn"> Research </button>
-                            <div class="dropdown-content">
-                                <a class="navbar-link" href="electro-page.html">Electrophysiology</a>
-                                <a class="navbar-link" href="behavior-page.html">Behavior</a>
-                                <a class="navbar-link" href="imaging-page.html">Imaging</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="navbar-item"><a class="navbar-link" href="publications-page.html">Publications</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="team-page.html">Team</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="events-page.html">Events</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="openings-page.html">Openings</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    -->
-
-
-
-
-    <div class="container">
-        <section id="lab-name">
+    <section class="lab-intro">
+        <video autoplay muted loop id="myVideo">
+            <source src="/home-page-assets/labwebsite movie (1).mp4" type="video/mp4">
+        </video>
+        <div id="lab-name">
             <div class="lab-name-container">
                 <div class="lab-name-content">
-                    <h3>Washington University in St. Louis - Dept. of Neuroscience </h3>
-                    <h1>Oviedo Lab</h1>
-                    <h4>Exploring Cortical Audio Processing</h4>
-                    <img src="/home-page-assets/brain-2.png" width="40%" height="40%">
-                    <button id="button1" onclick= "middle()">Learn more &#10230; </button>
-                </div>
-            </div>
-        </section>
-
-        <section id="what-we-study">
-            <div class="study-container">
-                <div class="study-content">
-                    <h1>What We Study</h1>
-                    <p> Animals rely on sounds for survival, and social/reproductive interactions. Our brain must
-                        perform the
-                        challenging tasks of rapidly recognizing, categorizing, and assigning communicative importance
-                        to sounds in
-                        a noisy environment. The instructions to these functions are found in the precise connections
-                        neurons make
-                        with one another. We study evolutionarily conserved mechanisms for decoding social calls in the
-                        Auditory
-                        Cortex of rodents. The organization of the cerebral cortex may appear stereotyped, but new tools
-                        that allow
-                        detailed investigation of neural circuits have revealed significant differences between cortical
-                        areas that
-                        perform different functions. These circuit specializations embedded in stereotyped modules are
-                        now believed
-                        to be the secret ingredients that enable cortical areas to perform specific tasks. Our goal is
-                        to reveal
-                        these unique circuit features in the Auditory Cortex and determine their behavioral
-                        significance.
-                    </p>
-                    <div class="three-items">
-                        <div class="item">
-                            <img src="">
-                            <h3>Something Here</h3>
-                            <p>lols</p>
-                        </div>
-                        <div class="item">
-                            <img src="">
-                            <h3>Something Here</h3>
-                            <p>lols</p>
-                        </div>
-                        <div class="item">
-                            <img src="">
-                            <h3>Something Here</h3>
-                            <p>lols</p>
-                        </div>
-                    </div>
-                    <button id="button2" onclick="bottom()">
-                        ↓ </button>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-we-do-it">
-            <div class="how-it-container">
-                <div class="how-it-content">
-                    <h1 class ="title-how-it">How we do it</h1>
-                    <div class="five-items">
-                        <div class="oneitem">
-                            <img src="">
-                            <h2>Transcriptomics</h2>
-                            <p>blurb</p>
-                        </div>
-                        <div class="oneitem">
-                            <img src="">
-                            <h2>In vitro Ephys</h2>
-                            <p>blurb</p>
-                        </div>
-                        <div class="oneitem">
-                            <img src="">
-                            <h2>In vivo Ephys</h2>
-                            <p>blurb</p>
-                        </div>
-                        <div class="oneitem">
-                            <img src="">
-                            <h2>Behavior</h2>
-                            <p>blurb</p>
-                        </div>
-                        <div class="oneitem">
-                            <img src="">
-                            <h2>Imaging</h2>
-                            <p>blurb</p>
-                        </div>
-                    </div>
-                </div>
-                <button id="button3" onclick = "toTop()"> ↑ </button>
-            </div>
-        </section>
-    </div>
-
-    <section class="footer">
-        <div class="all-container">
-            <div class="signature-logo-date-container">
-                <div class="sig-logo-date-nobox-container">
-                    <div class="logo-grid-container">
-                        <div class="top-grid-cell">
-                            <div class="footer-details">
-                                <p style="margin:0">
-                                    <span> 2024 Oviedo Lab </span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="middle-grid-cell">
-                            <img src="/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png"
-                                viewbox="0 0 24 24" fill="currentColor" width="45px" height="40px" class="logo" />
-                        </div>
-                    </div>
-                    <div class="bottom-grid-cell">
-                        <p class="footer-date">
-                            <span>Last Updated July 2024</span>
-                        </p>
-                    </div>
+                    <h3 class="fadeInUp-animation">Washington University in St. Louis - Dept. of Neuroscience </h3>
+                    <br>
+                    <h1 class="fadeInUp-animation">Oviedo Lab</h1>
+                    <br>
+                    <h4 class="fadeInUp-animation">Exploring Cortical Audio Processing</h4>
+                    <button id="button1" class="fadeInUp-animation" onclick="middle()">Learn more &#10230; </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- <img class="bg-image" src="/home-page-assets/Screenshot 2024-07-26 at 12.57.47 PM.png" alt="Bg image"> -->
+
+    <nav class="navbar smart-scroll navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <img class="navbar-logo" src="/home-page-assets/final_lab_logo-removebg-preview.svg" alt="navbarlogo">
+            <a class="navbar-brand" href="index.html">Oviedo Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications-page.html">Publications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="electro-page.html">Electrophysiology</a></li>
+                            <li><a class="dropdown-item" href="behavior-page.html">Behavior</a></li>
+                            <li><a class="dropdown-item" href="imaging-page.htm">Imaging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team-page.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events-page.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openings-page.html">Openings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="what-we-study">
+        <article class="study-container ">
+            <div class="study-content">
+                <h1>What We Study</h1>
+                <p> Animals rely on sounds for survival, and social/reproductive interactions. Our brain must
+                    perform the
+                    challenging tasks of rapidly recognizing, categorizing, and assigning communicative importance
+                    to sounds in
+                    a noisy environment. The instructions to these functions are found in the precise connections
+                    neurons make
+                    with one another. We study evolutionarily conserved mechanisms for decoding social calls in the
+                    Auditory
+                    Cortex of rodents. The organization of the cerebral cortex may appear stereotyped, but new tools
+                    that allow
+                    detailed investigation of neural circuits have revealed significant differences between cortical
+                    areas that
+                    perform different functions. These circuit specializations embedded in stereotyped modules are
+                    now believed
+                    to be the secret ingredients that enable cortical areas to perform specific tasks. Our goal is
+                    to reveal
+                    these unique circuit features in the Auditory Cortex and determine their behavioral
+                    significance.
+                </p>
+                <div class="three-items">
+                    <div class="item">
+                        <img src="">
+                        <h3>Something Here</h3>
+                        <p>lols</p>
+                    </div>
+                    <div class="item">
+                        <img src="">
+                        <h3>Something Here</h3>
+                        <p>lols</p>
+                    </div>
+                    <div class="item">
+                        <img src="">
+                        <h3>Something Here</h3>
+                        <p>lols</p>
+                    </div>
+                </div>
+                <button id="button2" class="fade" onclick="bottom()">
+                    ↓ </button>
+            </div>
+            </div>
+    </section>
+
+
+    <section id="how-we-do-it">
+        <div class="how-it-container">
+            <div class="how-it-content">
+                <h1 class="title-how-it">How we do it</h1>
+                <div class="five-items">
+                    <div class="oneitem">
+                        <img src="">
+                        <h2>Transcriptomics</h2>
+                        <p>blurb</p>
+                    </div>
+                    <div class="oneitem">
+                        <img src="">
+                        <h2>In vitro Ephys</h2>
+                        <p>blurb</p>
+                    </div>
+                    <div class="oneitem">
+                        <img src="">
+                        <h2>In vivo Ephys</h2>
+                        <p>blurb</p>
+                    </div>
+                    <div class="oneitem">
+                        <img src="">
+                        <h2>Behavior</h2>
+                        <p>blurb</p>
+                    </div>
+                    <div class="oneitem">
+                        <img src="">
+                        <h2>Imaging</h2>
+                        <p>blurb</p>
+                    </div>
+                </div>
+                <button id="button3" onclick="toTop()"> ↑ </button>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
