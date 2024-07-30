@@ -49,7 +49,6 @@ $(document).on("scroll", function() {
 
 
 
-
 // const observerOptions = {
 //   root: null,
 //   rootMargin: "0px",

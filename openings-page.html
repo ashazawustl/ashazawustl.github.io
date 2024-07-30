@@ -1,75 +1,113 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="openings-style.css" />
-    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script defer type="text/javascript" src="/home-page.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 
     <title>Openings</title>
-    </head>
-    <body>
-        <div class = "navbar">
-            <div class="logo">
-                <img src = "/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" alt = "site-logo" class = "site-logo"/>
-                <div class = "logo-label" > OVIEDO LAB</div>
-                <p class = "logo-dscp"> Cortical Audio Processing </p>
-        </div>
-            <div class = "nav-items">
-                <a href = "index.html">Home</a>
-                <div class = "dropdown">
-                  <button class = "dropbtn">  Research </button>
-                  <div class = "dropdown-content">
-                    <a href = "electro-page.html">Electrophysiology</a>
-                    <a href = "behavior-page.html">Behavior</a>
-                    <a href = "imaging-page.html">Imaging</a>
-                  </div>
-                </div>
-                <a href = "publications-page.html">Publications</a>
-                <a href = "team-page.html">Team</a>
-                <a href = "events-page.html">Events</a>
-                <a href = "openings-page.html">Openings</a>
-            </div>
-          </div>
-          <!--
- <div class = "navbarb">
-            <div> Last Updated: June 2024 </div>
-        </div>
-          -->
+</head>
 
-        <div class = "content">
-            <section class="container">
-                <article> 
-                    <div class = "img-container">
-                        <img src="./openings-assets/img0580_1200xx4284-4284-714-0.jpg" alt="neuro-building" class="building-pic">
-                    </div>
-                <p class= "description">
-                    Our laboratory is located in the Neuroscience Building on the Washington University School of Medicine 
-                    campus in St. Louis. We are affiliated with the Departments of Neuroscience, etc, etc within the School of Medicine.
+<body>
+    <nav class="navbar smart-scroll navbar-expand-sm navbar-light fixed-top">
+        <div class="container-fluid">
+            <img class="navbar-logo" src="/pub-page/final_lab_logo-removebg-preview.svg" alt="navbarlogo">
+            <a class="navbar-brand" href="index.html">Oviedo Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications-page.html">Publications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="electro-page.html">Electrophysiology</a></li>
+                            <li><a class="dropdown-item" href="behavior-page.html">Behavior</a></li>
+                            <li><a class="dropdown-item" href="imaging-page.htm">Imaging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team-page.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events-page.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openings-page.html">Openings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section class="container">
+            <article>
+                <div class="img-container fadeInUp-animation">
+                    <img src="./openings-assets/img0580_1200xx4284-4284-714-0.jpg" alt="neuro-building"
+                        class="building-pic2">
+                    <img src="./openings-assets/img0580_1200xx4284-4284-714-0.jpg" alt="neuro-building"
+                        class="building-pic1">
+                </div>
+                <p class="description">
+                    Our laboratory is located in the Neuroscience Building on the Washington University School of
+                    Medicine
+                    campus in St. Louis. We are affiliated with the Departments of Neuroscience, etc, etc within the
+                    School of Medicine.
                 </p>
-                <h1 class = "openings">
+                <h1 class="openings">
                     OPENINGS
                 </h1>
-                <p class = "job-descp">
-                The Oviedo lab is seeking a postdoctoral researcher (NIH-funded) to study the development of the auditory cortex in mice. 
-                Specifically, the maturation of neural circuits involved in processing social calls. Our long-term goal is to understand how 
-                the development of communication circuits go awry in mouse models of human communication disorders. Experience in electrophysiology 
-                is preferred but any talented candidate will be considered. Experience in patch-clamping, voltage-dye imaging and MATLAB programming 
-                are desirable. Our lab is in a new state of the art neuroscience building as part of the WashU medical campus in the Central West End of 
-                St. Louis. Come and be part of the unparalleled neuroscience community at WashU.
+                <p class="job-descp">
+                    The Oviedo lab is seeking a postdoctoral researcher (NIH-funded) to study the development of the
+                    auditory cortex in mice.
+                    Specifically, the maturation of neural circuits involved in processing social calls. Our long-term
+                    goal is to understand how
+                    the development of communication circuits go awry in mouse models of human communication disorders.
+                    Experience in electrophysiology
+                    is preferred but any talented candidate will be considered. Experience in patch-clamping,
+                    voltage-dye imaging and MATLAB programming
+                    are desirable. Our lab is in a new state of the art neuroscience building as part of the WashU
+                    medical campus in the Central West End of
+                    St. Louis. Come and be part of the unparalleled neuroscience community at WashU.
                 </p>
-                <p class ="interest">
-                    Interested applicants should email a CV, a cover letter, and contact information for three references to:
+                <p class="interest">
+                    Interested applicants should email a CV, a cover letter, and contact information for three
+                    references to:
                 </p>
-                <div class = "block">
-                    <p class = "contact">
+                <div class="block">
+                    <p class="contact">
                         Hysell V. Oviedo, Ph.D.
                         Jeffrey T. Fort Neuroscience Building
                         4370 Duncan Ave
@@ -79,37 +117,19 @@
                         Email: hysell [at] wustl [dot] edu
                     </p>
                 </div>
-                <h1 class = "location">
+                <h1 class="location">
                     LAB LOCATION
                 </h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.5634694760843!2d-90.25783572341294!3d38.6359223620891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b59e2ca60fbb%3A0xaaf0bff54b1d53be!2sWashU%20Neuroscience%20Building!5e0!3m2!1sen!2sus!4v1718130713015!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class ="map"></iframe>
+                <p class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.5634694760843!2d-90.25783572341294!3d38.6359223620891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b59e2ca60fbb%3A0xaaf0bff54b1d53be!2sWashU%20Neuroscience%20Building!5e0!3m2!1sen!2sus!4v1718130713015!5m2!1sen!2sus"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
             </article>
-            </section>
-        </div>
-        <section class  = "footer">
-            <div class = "all-container">
-                <div class = "signature-logo-date-container">
-                    <div class = "sig-logo-date-nobox-container">
-                        <div class = "logo-grid-container">
-                            <div class = "top-grid-cell">
-                                <div class = "footer-details">
-                                    <p style = "margin:0">
-                                        <span> 2024 Oviedo Lab </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class = "middle-grid-cell">
-                                <img src = "/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" viewbox="0 0 24 24" fill="currentColor" width="45px" height="40px" class="logo"/>
-                            </div>
-                        </div>
-                        <div class = "bottom-grid-cell">
-                            <p class = "footer-date">
-                                <span>Last Updated July 2024</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
-    </body>
+    </div>
+
+</body>
+
 </html>
