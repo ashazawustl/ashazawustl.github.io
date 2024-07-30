@@ -85,8 +85,6 @@ body {
 .container .heading h3 {
     font-size: 3em;
     font-weight: bolder;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #222;
 }
 
 .container .heading h3 span {
