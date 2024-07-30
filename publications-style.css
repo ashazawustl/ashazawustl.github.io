@@ -1,133 +1,93 @@
 .julius-sans-one-regular {
     font-family: "Julius Sans One", sans-serif;
-    font-weight: 400;
+    font-weight: 1000;
     font-style: normal;
 }
 
 .jost-regualar {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
 }
 
-*{
+* {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     padding: 0;
     font-family: "Julius Sans One", "Jost", sans-serif;
 }
 
+/* regular declarations */
 
-.dropbtn {
-    background-color: #faad4e;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+body {
+    min-height: 210vh;
+    overflow-x: hidden;
 }
-
-.dropdown:hover .dropbtn {
-    background: #fad24e;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #FFBD6F;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-
-.dropdown-content a {
-    text-decoration: none;
-    color: white;
-    padding: 0 1.5rem;
-}
-
-.dropdown-content a:hover {
-    color: #fff;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 
 .navbar {
-    height: 80px;
-    background: #faad4e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    transition: all 0.5s;
 }
 
-.logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-style: normal;
-    text-align: center;
-    margin-right: 80px;
-    margin-bottom: 30px;
-    justify-content: center
+.nav-item {
+    padding: 1%;
+    left: 0;
 }
 
-.site-logo {
-    float: left;
-    top: 50%;
-    left: 50%;
-    width: 45px;
-    height: 40px;
-    margin-top: 25px;
+.navbar-nav {
+    margin-left: 59%;
 }
 
-.logo-label{
-    top: 50%;
-    left: 50%;
-    float: right;
-    margin-left: 10px;
-    margin-top: 25px;
+.navbar-brand {
+    margin-left: 1%;
 }
 
-.logo-dscp {
-    top: 50%;
-    left: 50%;
-    font-size: 12px;
-    font-family: "Jost", sans-serif;
-    margin-left: 0px;
+.navbar-logo {
+    width: 100px;
+    height: 100px;
+    padding: .5%;
+    margin-left: 2.5%;
 }
 
-
-.navbar a{
-    text-decoration: none;
-    color: white;
-    padding: 0 1.5rem;
+.smart-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
-.navbar a:hover{
-    color: #fff;
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
 }
 
 .pub-page-title{
     font-family: "Julius Sans One", sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-a{
-    color: white;
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 hr {
@@ -135,8 +95,9 @@ hr {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 70px;
-    text-align: center;
+    width: 10%;
+    text-align-last: center;
+    transform: translate(450%,0);
     background-color: rgb(120, 118, 118); 
     border: none; 
 }
@@ -147,7 +108,6 @@ hr {
     font-family: "Julius Sans One", sans-serif;
     font-size: 30px;
     text-align: left; 
-    color: white;
 }
 
 section{
@@ -166,7 +126,11 @@ section{
 }
 
 .twenty24{
-    background-color: #ffdb58;
+    background: linear-gradient(216deg, #645957 7.62%, #aea09e 45.4%, #edebeb 98.67%);
+}
+
+.twenty24 a{
+    color: black;
 }
 
 .page-sections h1{
@@ -186,8 +150,8 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 10rem;
-    color: white;
+    margin-left: 12rem;
+    color: black;
 }
 .twenty22 .twenty22-list{
     margin-top: 30px;
@@ -196,11 +160,44 @@ section{
     margin-right: 10rem;
     color: white;
 }
+
+.twenty22 h1{
+    color: white;
+}
+
+.twenty20 h1{
+    color: white;
+}
+
+.twenty17-and-earlier h1{
+    color: white;
+}
+
+.twenty22 a{
+    color: white;
+}
+
+.twenty21 a{
+    color: black;
+}
+
+.twenty20 a{
+    color: white;
+}
+
+.twenty19 a{
+    color: black;
+}
+
+.twenty17-and-earlier a{
+    color: white;
+}
+
 .twenty22 p{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 10rem;
+    margin-left: 12rem;
     color: white;
 }
 .twenty21 .twenty21-list{
@@ -214,7 +211,7 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    color: white;
+    color: black;
 }
 .twenty20 .twenty20-list{
     margin-top: 30px;
@@ -226,7 +223,7 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 10rem;
+    margin-left: 12rem;
     color: white;
 }
 .twenty19 .twenty19-list{
@@ -239,8 +236,8 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 10rem;
-    color: white;
+    margin-left: 12rem;
+    color: black;
 }
 .twenty17-and-earlier p{
     font-family: "Jost", sans-serif;
@@ -255,125 +252,22 @@ section{
     margin-right: 10rem;
 }
 .twenty22{
-    background-color: #ffbf00;
+    background:  linear-gradient(144deg, #343c3a 5%, #78807d 70%, #cbd1cf);
 }
 .twenty21{
-    background-color: #f1b04c;
+    background: linear-gradient(216deg, #645957 7.62%, #aea09e 45.4%, #edebeb 98.67%);
 }
 .twenty20{
-    background-color: #ee9f27;
+    background: linear-gradient(144deg, #343c3a 5%, #78807d 70%, #cbd1cf);
 }
 .twenty19{
-    background-color: #ec9006;
+    background: linear-gradient(216deg, #645957 7.62%, #aea09e 45.4%, #edebeb 98.67%);
 }
 .twenty17-and-earlier{
-    background-color: #e88504;
+    background: linear-gradient(144deg, #343c3a 5%, #78807d 70%, #cbd1cf);
     height: auto;
 }
 
-.footer{
-    background-color: #faad4e;
-    font-size: 16px;
-    text-transform: none;
-    letter-spacing: normal;
-    display: flex;
-    unicode-bidi: isolate;
-    box-sizing: inherit;
-    margin-top: 60px;
-    height: auto;
-}
-
-.all-container{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
-    padding-right: 24px;
-    padding-left: 24px;
-    font-size: 16px;
-}
-
-.signature-logo-date-container{
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
-
-.top-grid-cell{
-    flex-grow: 3;
-    flex-basis: 100%;
-    flex-shrink: 1;
-    box-sizing: border-box;
-    padding-left: 0px;
-    padding-bottom:0px;
-    padding-right: 0px;
-    padding-right: 0px;
-    padding-top: 10px;
-    max-width: 100%;
-    font-size: 16px;
-}
-
-.footer-details{
-    color: white;
-    line-height: 1.5;
-    font-weight: 400px;
-    font-size: 14px;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.footer-details p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-.bottom-grid-cell{
-    flex-grow: 3;
-    flex-basis: 100%;
-    flex-shrink: 1;
-    box-sizing: border-box;
-    padding-left: 0px;
-    padding-bottom:10px;
-    padding-right: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    max-width: 100%;
-    font-size: 16px;
-}
-
-.footer-date{
-    color: white;
-    line-height: 1.5;
-    font-weight: 400px;
-    font-size: 14px;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.middle-grid-cell img{ 
-    display: flex;
-    margin-top: 15px;
-    margin-left: 85px;
-}
-
-.footer-date p{
-    display: flex;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
 
 @media screen and (max-width:768px){
     .footer{

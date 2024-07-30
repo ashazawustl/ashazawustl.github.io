@@ -1,181 +1,190 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-    
-    <meta charset="utf-8" />
-    <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="publications-style.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script defer type="text/javascript" src="/home-page.js"></script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="publications-page.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <title>Oviedo Lab</title>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class = "navbar">
-            <div class="logo">
-                <img src = "/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" alt = "site-logo" class = "site-logo"/>
-                <div class = "logo-label" > OVIEDO LAB</div>
-                <p class = "logo-dscp"> Cortical Audio Processing </p>
-        </div>
-            <div class = "nav-items">
-                <a href = "index.html">Home</a>
-                <div class = "dropdown">
-                  <button class = "dropbtn">  Research </button>
-                  <div class = "dropdown-content">
-                    <a href = "electro-page.html">Electrophysiology</a>
-                    <a href = "behavior-page.html">Behavior</a>
-                    <a href = "imaging-page.html">Imaging</a>
-                  </div>
-                </div>
-                <a href = "publications-page.html">Publications</a>
-                <a href = "team-page.html">Team</a>
-                <a href = "events-page.html">Events</a>
-                <a href = "openings-page.html">Openings</a>
+    <nav class="navbar smart-scroll navbar-expand-sm navbar-light fixed-top">
+        <div class="container-fluid">
+            <img class="navbar-logo" src="/pub-page/final_lab_logo-removebg-preview.svg" alt="navbarlogo">
+            <a class="navbar-brand" href="index.html">Oviedo Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications-page.html">Publications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="electro-page.html">Electrophysiology</a></li>
+                            <li><a class="dropdown-item" href="behavior-page.html">Behavior</a></li>
+                            <li><a class="dropdown-item" href="imaging-page.htm">Imaging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team-page.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events-page.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openings-page.html">Openings</a>
+                    </li>
+                </ul>
             </div>
-          </div>
+        </div>
+    </nav>
 
-    <div class = "pub-page-title"> 
+    <div class="pub-page-title fadeInUp-animation">
         <h1> Publications </h1>
         <hr>
     </div>
-        <div class = "page-sections">
+    <div class="page-sections">
 
-            <section class = "twenty24">
-                <h1>2024</h1>
-                <ul class = "twenty24-list">
-                    <a href = "/publications-assets/papers/2024.01.16.575905v1.full.pdf">
-                        <li>Mouse Auditory Cortex Undergoes Asynchronous Maturation in the Right and Left Hemispheres </li>
-                    </a>                   
-                </ul>
-                <p class="note">Reid A, Neophytou D, Levy R, Oviedo HV 2024. biorxiv</p>
-            </section>
+        <section class="twenty24 fadeInUp-animation">
+            <h1>2024</h1>
+            <ul class="twenty24-list">
+                <a href="/publications-assets/papers/2024.01.16.575905v1.full.pdf">
+                    <li>Mouse Auditory Cortex Undergoes Asynchronous Maturation in the Right and Left Hemispheres </li>
+                </a>
+            </ul>
+            <p class="note">Reid A, Neophytou D, Levy R, Oviedo HV 2024. biorxiv</p>
+        </section>
 
-            <section class = "tag twenty22">
-                <h1>2022</h1>
-                <ul class = "twenty22-list">
-                    <a href = "/publications-assets/papers/differences-in-temporal-processing.pdf">
-                        <li>Differences in temporal processing speeds between the right and left auditory cortex reflect the strength of recurrent synaptic connectivity </li>
-                    </a>
-                </ul>
-                <p class="note">Neophytou D, Arribas DM, Arora T, Levy RB, Park IM, Oviedo H 2022. PLOS Biology</p>
-            </section>
+        <section class="tag twenty22">
+            <h1>2022</h1>
+            <ul class="twenty22-list">
+                <a href="/publications-assets/papers/differences-in-temporal-processing.pdf">
+                    <li>Differences in temporal processing speeds between the right and left auditory cortex reflect the
+                        strength of recurrent synaptic connectivity </li>
+                </a>
+            </ul>
+            <p class="note">Neophytou D, Arribas DM, Arora T, Levy RB, Park IM, Oviedo H 2022. PLOS Biology</p>
+        </section>
 
-            <section class = "tag twenty21">
-                <h1>2021</h1>
-                <ul class = "twenty21-list">
-                    <a href = "/publications-assets/papers/recurrent-connectivity.pdf">
-                        <li>Recurrent connectivity underlies lateralized temporal processing differences in Auditory Cortex
-                        </li>
-                    </a>
-                    <p class="note">Neophytou D, Arribas D, Levy R, Park IM, Oviedo H 2021. BioRxiv</p>
-                    <br>
-                    <a href = "/publications-assets/papers/effects-of-direct-current.pdf">
-                        <li>Effects of direct current stimulation on synaptic plasticity in a single neuron</li>
-                    </a>
-                    <p class="note">Farahani F, Kronberg G, FallahRad M, Oviedo HV, Parra LC 2021. Brain Stimulation: j.brs.2021.03.001</p>
-                </ul>
-            </section>
+        <section class="tag twenty21">
+            <h1>2021</h1>
+            <ul class="twenty21-list">
+                <a href="/publications-assets/papers/recurrent-connectivity.pdf">
+                    <li>Recurrent connectivity underlies lateralized temporal processing differences in Auditory Cortex
+                    </li>
+                </a>
+                <p class="note">Neophytou D, Arribas D, Levy R, Park IM, Oviedo H 2021. BioRxiv</p>
+                <br>
+                <a href="/publications-assets/papers/effects-of-direct-current.pdf">
+                    <li>Effects of direct current stimulation on synaptic plasticity in a single neuron</li>
+                </a>
+                <p class="note">Farahani F, Kronberg G, FallahRad M, Oviedo HV, Parra LC 2021. Brain Stimulation:
+                    j.brs.2021.03.001</p>
+            </ul>
+        </section>
 
-            <section class = "tag twenty20">
-                <h1>2020</h1>
-                 <ul class = "twenty20-list">
-                    <a href = "/publications-assets/papers/using-neural-circuit-interrogation.pdf">
-                        <li>Using Neural Circuit Interrogation in Rodents to Unravel Human Speech Decoding </li>
-                    </a>
-                </ul>
-                <p class="note">Neophytou D, Oviedo HV 2020. Frontiers in Neural Circuits: fncir.2020.00002.</p>
-            </section>
+        <section class="tag twenty20">
+            <h1>2020</h1>
+            <ul class="twenty20-list">
+                <a href="/publications-assets/papers/using-neural-circuit-interrogation.pdf">
+                    <li>Using Neural Circuit Interrogation in Rodents to Unravel Human Speech Decoding </li>
+                </a>
+            </ul>
+            <p class="note">Neophytou D, Oviedo HV 2020. Frontiers in Neural Circuits: fncir.2020.00002.</p>
+        </section>
 
-            <section class = "tag twenty19">
-                <h1>2019</h1>
-                 <ul class = "twenty19-list">
-                    <a href = "publications-assets/papers/circuit-asymmetries.pdf">
-                        <li>Circuit asymmetries underlie functional lateralization in the mouse auditory cortex </li>
-                    </a> 
-                </ul>
-                <p class="note">Levy RB, Marquarding T, Reid AP, Pun CM, Renier N, Oviedo HV 2019. Nature: s41467-019-10690-3.</p>
-            </section>
+        <section class="tag twenty19">
+            <h1>2019</h1>
+            <ul class="twenty19-list">
+                <a href="publications-assets/papers/circuit-asymmetries.pdf">
+                    <li>Circuit asymmetries underlie functional lateralization in the mouse auditory cortex </li>
+                </a>
+            </ul>
+            <p class="note">Levy RB, Marquarding T, Reid AP, Pun CM, Renier N, Oviedo HV 2019. Nature:
+                s41467-019-10690-3.</p>
+        </section>
 
-            <section class = "tag twenty17-and-earlier">
-                <h1>2017 and Earlier</h1>
-                <ul class = "twenty17-list">
-                    <a href = "/publications-assets/papers/connectivity-motifs.pdf">
-                        <li>Connectivity motifs of inhibitory neurons in the mouse Auditory Cortex</li>
-                    </a>
-                    <p class="note">Oveido HV 2017. Nature: s41598-017-16904-2.</p>
-                    <br>
-                    <a href = "/publications-assets/papers/long-term-cre-mediated.pdf">
-                        <li>Long-term Cre-mediated retrograde tagging of neurons using a novel recombinant pseudorabies virus</li>
-                    </a>
-                    <p class="note">Oyibo HK, Znamenskiy P, Oviedo HV, Enquist LW, Zador AM. 2014. Frontiers Neuroanatomy: fnana.2014.00086.</p>
-                    <br>
-                    <a href = "publications-assets/papers/integration-of-subthreshold.pdf">
-                        <li>Integration of Subthreshold and Suprathreshold Excitatory Barrages along the Somatodendritic Axis of Pyramidal Neurons </li>
-                    </a>
-                    <p class="note">Oviedo HV, Reyes AD. 2012. PLoS ONE: 10.1371/journal.pone.0033831.</p>
-                    <br>
-                    <a href = "publications-assets/papers/pten-regulation-of-local.pdf">
-                        <li>PTEN Regulation of Local and Long-Range Connections in Mouse Auditory Cortex</li>
-                    </a>
-                    <p class="note"> Xiong Q, Oviedo HV, Trotman LC, Zador AM 2012. Journal of Neuroscience: JNEUROSCI.4480-11.2012</p>
-                    <br>
-                    <a href = "/publications-assets/papers/nn.2659.pdf">
-                        <li>The functional asymmetry of auditory cortex is reflected in the organization of local cortical circuits </li>
-                    </a>
-                    <p class="note">Oviedo HV, Bureau I, Svoboda K, Zador AM 2010. Nat Neurosci: nn.2659</p>
-                    <br>
-                    <a href = "publications-assets/papers/variations-of-input-output.full.pdf">
-                        <li>Variation of Input-Output Properties along the Somatodendritic Axis of Pyramidal Neurons </li>
-                    </a>
-                    <p class="note">Oviedo HV, Reyes AD 2005. JNeurosci</p>
-                    <br>
-                    <a href = "publications-assets/papers/nn807.pdf">
-                        <li>Boosting of neuronal firing evoked with asynchronous and synchronous inputs to the dendrite</li>
-                    </a>
-                    <p class="note">Oviedo HV, Reyes AD 2002. Nat Neurosci: nn.807</p>
-                </ul>
-            </section>
-        </div>
-
-        <br>
-
-        <section class  = "footer">
-            <div class = "all-container">
-                <div class = "signature-logo-date-container">
-                    <div class = "sig-logo-date-nobox-container">
-                        <div class = "logo-grid-container">
-                            <div class = "top-grid-cell">
-                                <div class = "footer-details">
-                                    <p style = "margin:0">
-                                        <span> 2024 Oviedo Lab </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class = "middle-grid-cell">
-                                <img src = "/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" viewbox="0 0 24 24" fill="currentColor" width="45px" height="40px" class="logo"/>
-                            </div>
-                        </div>
-                        <div class = "bottom-grid-cell">
-                            <p class = "footer-date">
-                                <span>Last Updated July 2024</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="tag twenty17-and-earlier">
+            <h1>2017 and Earlier</h1>
+            <ul class="twenty17-list">
+                <a href="/publications-assets/papers/connectivity-motifs.pdf">
+                    <li>Connectivity motifs of inhibitory neurons in the mouse Auditory Cortex</li>
+                </a>
+                <p class="note">Oveido HV 2017. Nature: s41598-017-16904-2.</p>
+                <br>
+                <a href="/publications-assets/papers/long-term-cre-mediated.pdf">
+                    <li>Long-term Cre-mediated retrograde tagging of neurons using a novel recombinant pseudorabies
+                        virus</li>
+                </a>
+                <p class="note">Oyibo HK, Znamenskiy P, Oviedo HV, Enquist LW, Zador AM. 2014. Frontiers Neuroanatomy:
+                    fnana.2014.00086.</p>
+                <br>
+                <a href="publications-assets/papers/integration-of-subthreshold.pdf">
+                    <li>Integration of Subthreshold and Suprathreshold Excitatory Barrages along the Somatodendritic
+                        Axis of Pyramidal Neurons </li>
+                </a>
+                <p class="note">Oviedo HV, Reyes AD. 2012. PLoS ONE: 10.1371/journal.pone.0033831.</p>
+                <br>
+                <a href="publications-assets/papers/pten-regulation-of-local.pdf">
+                    <li>PTEN Regulation of Local and Long-Range Connections in Mouse Auditory Cortex</li>
+                </a>
+                <p class="note"> Xiong Q, Oviedo HV, Trotman LC, Zador AM 2012. Journal of Neuroscience:
+                    JNEUROSCI.4480-11.2012</p>
+                <br>
+                <a href="/publications-assets/papers/nn.2659.pdf">
+                    <li>The functional asymmetry of auditory cortex is reflected in the organization of local cortical
+                        circuits </li>
+                </a>
+                <p class="note">Oviedo HV, Bureau I, Svoboda K, Zador AM 2010. Nat Neurosci: nn.2659</p>
+                <br>
+                <a href="publications-assets/papers/variations-of-input-output.full.pdf">
+                    <li>Variation of Input-Output Properties along the Somatodendritic Axis of Pyramidal Neurons </li>
+                </a>
+                <p class="note">Oviedo HV, Reyes AD 2005. JNeurosci</p>
+                <br>
+                <a href="publications-assets/papers/nn807.pdf">
+                    <li>Boosting of neuronal firing evoked with asynchronous and synchronous inputs to the dendrite</li>
+                </a>
+                <p class="note">Oviedo HV, Reyes AD 2002. Nat Neurosci: nn.807</p>
+            </ul>
         </section>
     </div>
-    </body>
+
+    <br>
+    </div>
+</body>
+
 </html>
