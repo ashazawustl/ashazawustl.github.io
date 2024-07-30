@@ -68,7 +68,7 @@ body {
 }
 
 .current-members-section {
-    background-color: #ffffe0;
+    background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
     margin-top: 20px;
     height: auto;
 }
