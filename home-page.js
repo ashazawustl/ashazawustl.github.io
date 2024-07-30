@@ -31,29 +31,47 @@ if ($('.smart-scroll').length > 0) { // check if element exists
     });
 }
 
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
 
-const observerOptions = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.7
-};
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
 
-function observerCallback(entries, observer) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // fade in observed elements that are in view
-      entry.target.classList.replace('fadeOut', 'fadeIn');
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
     } else {
-      // fade out observed elements that are not in view
-      entry.target.classList.replace('fadeIn', 'fadeOut');
+      $(tag).removeClass("visible");
     }
-  });
-}
+  }
+});
 
-const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-const fadeElms = document.querySelectorAll('.fade');
-fadeElms.forEach(el => observer.observe(el));
+
+
+// const observerOptions = {
+//   root: null,
+//   rootMargin: "0px",
+//   threshold: 0.7
+// };
+
+// function observerCallback(entries, observer) {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       // fade in observed elements that are in view
+//       entry.target.classList.replace('fadeOut', 'fadeIn');
+//     } else {
+//       // fade out observed elements that are not in view
+//       entry.target.classList.replace('fadeIn', 'fadeOut');
+//     }
+//   });
+// }
+
+// const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+// const fadeElms = document.querySelectorAll('.fade');
+// fadeElms.forEach(el => observer.observe(el));
 
 
 // let options = {
