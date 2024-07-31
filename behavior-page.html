@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="stylesheet" href="behavior-page.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script defer type="text/javascript" src="/home-page.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,34 +19,58 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
   <title>Oviedo Lab</title>
 </head>
 
 <body>
 
-  <div class="navbar">
-    <div class="logo">
-      <img src = "/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" alt = "site-logo" class = "site-logo"/>
-      <div class = "logo-label" > OVIEDO LAB</div>
-      <p class = "logo-dscp"> Cortical Audio Processing </p>
-</div>
-    <div class="nav-items">
-      <a href="index.html">Home</a>
-      <div class="dropdown">
-        <button class="dropbtn"> Research </button>
-        <div class="dropdown-content">
-          <a href="electro-page.html">Electrophysiology</a>
-          <a href="behavior-page.html">Behavior</a>
-          <a href="imaging-page.html">Imaging</a>
-        </div>
+  <nav class="navbar smart-scroll navbar-expand-sm navbar-light fixed-top">
+    <div class="container-fluid">
+      <img class="navbar-logo" src="/pub-page/final_lab_logo-removebg-preview.svg" alt="navbarlogo">
+      <a class="navbar-brand" href="index.html">Oviedo Lab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications-page.html">Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Research
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="electro-page.html">Electrophysiology</a></li>
+              <li><a class="dropdown-item" href="behavior-page.html">Behavior</a></li>
+              <li><a class="dropdown-item" href="imaging-page.html">Imaging</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team-page.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events-page.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="openings-page.html">Openings</a>
+          </li>
+        </ul>
       </div>
-      <a href="publications-page.html">Publications</a>
-      <a href="team-page.html">Team</a>
-      <a href="events-page.html">Events</a>
-      <a href="openings-page.html">Openings</a>
     </div>
-  </div>
+  </nav>
+
   <div class="electro_img">
     <img src="/behavior-page-assets/mindset-programmer-machine-learning-brain-mind-think-1440817-pxhere.com.jpg"
       class="heading_img" alt="Image1">
@@ -100,33 +129,7 @@
     </div>
   </div>
 
-  <script src = "app.js"></script>
 
-  <section class="footer">
-    <div class="all-container">
-      <div class="signature-logo-date-container">
-        <div class="sig-logo-date-nobox-container">
-          <div class="logo-grid-container">
-            <div class="top-grid-cell">
-              <div class="footer-details">
-                <p style="margin:0">
-                  <span> 2024 Oviedo Lab </span>
-                </p>
-              </div>
-            </div>
-            <div class="middle-grid-cell">
-              <img src = "/home-page-assets/Screenshot 2024-07-09 at 10.57.42 AM-modified.png" viewbox="0 0 24 24" fill="currentColor" width="45px" height="40px" class="logo"/>
-            </div>
-          </div>
-          <div class="bottom-grid-cell">
-            <p class="footer-date">
-              <span>Last Updated July 2024</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </body>
 
 </html>
