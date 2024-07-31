@@ -25,17 +25,6 @@ body {
     overflow-x: hidden;
 }
 
-#myVideo {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    width: 210vh;
-    max-height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    filter: brightness(0.6);
-}
-
 .navbar {
     transition: all 0.5s;
 }
@@ -77,8 +66,6 @@ body {
     transform: translateY(0);
     transition: all 0.3s ease-in-out;
 }
-
-
 
 .img-container{
     text-align: center;

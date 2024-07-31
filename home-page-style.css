@@ -192,7 +192,7 @@ body {
     margin-bottom: 2%;
 }
 
-.study-img{
+.study-img {
     margin-left: 60%;
     margin-top: -25%;
 }
@@ -201,12 +201,12 @@ body {
     opacity: 0;
     transform: translate(0, 10vh);
     transition: all 3s;
-  }
-  
-  .tag.visible {
+}
+
+.tag.visible {
     opacity: 1;
     transform: translate(0, 0);
-  }
+}
 
 .three-items {
     margin: auto;
@@ -219,7 +219,7 @@ body {
 }
 
 .item img {
-    margin:auto;
+    margin: auto;
     display: absolute;
     width: 30%;
     height: 50%;
@@ -227,7 +227,7 @@ body {
     border: 1px solid black;
     border-color: black;
     margin-bottom: 10%;
-    transform: translate(120%,0);
+    transform: translate(120%, 0);
     margin-top: 30px;
 }
 
@@ -351,11 +351,11 @@ body {
     align-items: left;
 }
 
-.three img{
+.three img {
     width: 55%;
 }
 
-.four img{
+.four img {
     width: 25%;
 }
 
@@ -388,12 +388,12 @@ body {
     left: 98%;
 }
 
-@media screen and (max-width:1600px){
+@media screen and (max-width:1600px) {
     body {
         min-height: 210vh;
         overflow-x: hidden;
     }
-    
+
     #myVideo {
         position: absolute;
         bottom: 0;
@@ -404,31 +404,31 @@ body {
         z-index: -1;
         filter: brightness(0.6);
     }
-    
+
     .navbar {
         transition: all 0.5s;
     }
-    
+
     .nav-item {
         padding: 1%;
         left: 0;
     }
-    
+
     .navbar-nav {
         margin-left: 44%;
     }
-    
+
     .navbar-brand {
         margin-left: 1%;
     }
-    
+
     .navbar-logo {
         width: 100px;
         height: 100px;
         padding: .5%;
         margin-left: 2.5%;
     }
-    
+
     .smart-scroll {
         position: fixed;
         top: 0;
@@ -436,17 +436,17 @@ body {
         left: 0;
         z-index: 1030;
     }
-    
+
     .scrolled-down {
         transform: translateY(-100%);
         transition: all 0.3s ease-in-out;
     }
-    
+
     .scrolled-up {
         transform: translateY(0);
         transition: all 0.3s ease-in-out;
     }
-    
+
     .p {
         font-family: "Jost", sans-serif;
         color: #000;
@@ -454,7 +454,7 @@ body {
         float: right;
         margin-top: 15px;
     }
-    
+
     #button1 {
         top: 50%;
         bottom: 0;
@@ -468,33 +468,33 @@ body {
         display: block;
         margin: auto;
         letter-spacing: 6px;
-    
+
     }
-    
-    
+
+
     #lab-name {
         align-items: center;
         justify-content: center;
         left: -3%;
     }
-    
+
     .lab-name-content h1 {
         font-family: "Julius Sans One", sans-serif;
         font-size: calc(1vw + 1vh);
     }
-    
+
     .lab-name-content h3 {
         font-family: "Julius Sans One", sans-serif;
         font-size: calc(1vw + 1vh);
     }
-    
+
     .lab-name-content h4 {
         font-family: "Jost", sans-serif;
         margin-bottom: 2%;
         font-size: calc(1vw + 1vh);
         font-style: normal;
     }
-    
+
     #lab-name {
         margin: auto;
         padding: 2rem;
@@ -504,7 +504,7 @@ body {
         justify-content: center;
         position: absolute;
     }
-    
+
     .lab-name-container {
         margin: auto;
         align-content: center;
@@ -513,7 +513,7 @@ body {
         width: 100%;
         height: 100%;
     }
-    
+
     .lab-name-content {
         color: white;
         align-content: center;
@@ -524,7 +524,7 @@ body {
         width: 100%;
         height: 100%;
     }
-    
+
     #what-we-study {
         justify-content: left;
         top: 100vh;
@@ -533,8 +533,8 @@ body {
         background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
         position: absolute;
     }
-    
-    
+
+
     .study-container {
         position: absolute;
         top: 10%;
@@ -543,14 +543,14 @@ body {
         margin-right: 8%;
         margin-left: 5%;
     }
-    
+
     .study-content h1 {
         text-align: left;
         letter-spacing: 2px;
         font-size: 50px;
         margin-bottom: 50px;
     }
-    
+
     .study-content p {
         text-align: left;
         font-family: "Jost", sans-serif;
@@ -559,7 +559,7 @@ body {
         font-size: 20px;
         margin-top: 20px;
     }
-    
+
     .three-items {
         margin: auto;
         display: grid;
@@ -569,24 +569,24 @@ body {
         width: 100%;
         position: absolute;
     }
-    
+
     .item img {
         margin: auto;
         display: flex;
         margin-top: 30px;
     }
-    
+
     .item h3 {
         text-align-last: center;
         letter-spacing: 2px;
     }
-    
+
     .item p {
         text-align: center;
         font-family: "Jost", sans-serif;
         font-size: 16px;
     }
-    
+
     #button2 {
         margin-top: 10px;
         border-radius: 50%;
@@ -602,44 +602,44 @@ body {
         right: 0;
         bottom: -8rem;
     }
-    
-    
+
+
     .fadeInUp-animation {
         animation: 1.5s fadeInUp;
     }
-    
+
     @keyframes fadeInUp {
         0% {
             transform: translateY(100%);
             opacity: 0;
         }
-    
+
         100% {
             transform: translateY(0%);
             opacity: 1;
         }
     }
-    
-    
+
+
     .lab-name-content h3 {
         text-align-last: center;
         letter-spacing: 2px;
         /* position:absolute; */
     }
-    
+
     .lab-name-content h1 {
         letter-spacing: 5px;
         font-size: 60px;
         text-align-last: center;
         /* position:absolute; */
     }
-    
+
     .lab-name-content h4 {
         letter-spacing: 2px;
         text-align-last: center;
         /* position:absolute; */
     }
-    
+
     #how-we-do-it {
         margin: auto;
         align-content: center;
@@ -650,34 +650,34 @@ body {
         background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
         position: absolute;
     }
-    
+
     .how-it-content {
         transform: translate(-5%, -60%);
         margin-left: 10%;
     }
-    
+
     .fade {
         transition: opacity 0.7s ease-in;
     }
-    
+
     .fadeOut {
         opacity: 0;
     }
-    
+
     .fadeIn {
         opacity: 1;
     }
-    
+
     .how-it-container {
         position: absolute;
     }
-    
+
     .title-how-it {
         font-size: 50px;
         letter-spacing: 2px;
         color: black;
     }
-    
+
     .five-items {
         margin: auto;
         display: grid;
@@ -688,27 +688,27 @@ body {
         position: relative;
         align-items: left;
     }
-    
+
     .oneitem img {
         margin: auto;
         display: absolute;
         margin-top: 30px;
         align-items: left;
     }
-    
+
     .oneitem h2 {
         text-align: left;
         letter-spacing: 2px;
         color: black
     }
-    
+
     .oneitem p {
         text-align: left;
         font-family: "Jost", sans-serif;
         font-size: 16px;
         color: black
     }
-    
+
     #button3 {
         margin-top: 10px;
         border-radius: 50%;
@@ -1066,12 +1066,12 @@ body {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     body {
         min-height: 210vh;
         overflow-x: hidden;
     }
-    
+
     #myVideo {
         position: absolute;
         bottom: 0;
@@ -1082,31 +1082,31 @@ body {
         z-index: -1;
         filter: brightness(0.6);
     }
-    
+
     .navbar {
         transition: all 0.5s;
     }
-    
+
     .nav-item {
         padding: 1%;
         left: 0;
     }
-    
+
     .navbar-nav {
         margin-left: 44%;
     }
-    
+
     .navbar-brand {
         margin-left: 1%;
     }
-    
+
     .navbar-logo {
         width: 100px;
         height: 100px;
         padding: .5%;
         margin-left: 2.5%;
     }
-    
+
     .smart-scroll {
         position: fixed;
         top: 0;
@@ -1114,17 +1114,17 @@ body {
         left: 0;
         z-index: 1030;
     }
-    
+
     .scrolled-down {
         transform: translateY(-100%);
         transition: all 0.3s ease-in-out;
     }
-    
+
     .scrolled-up {
         transform: translateY(0);
         transition: all 0.3s ease-in-out;
     }
-    
+
     .p {
         font-family: "Jost", sans-serif;
         color: #000;
@@ -1132,7 +1132,7 @@ body {
         float: right;
         margin-top: 15px;
     }
-    
+
     #button1 {
         top: 50%;
         bottom: 0;
@@ -1146,33 +1146,33 @@ body {
         display: block;
         margin: auto;
         letter-spacing: 6px;
-    
+
     }
-    
-    
+
+
     #lab-name {
         align-items: center;
         justify-content: center;
         left: -3%;
     }
-    
+
     .lab-name-content h1 {
         font-family: "Julius Sans One", sans-serif;
         font-size: calc(1vw + 1vh);
     }
-    
+
     .lab-name-content h3 {
         font-family: "Julius Sans One", sans-serif;
         font-size: calc(1vw + 1vh);
     }
-    
+
     .lab-name-content h4 {
         font-family: "Jost", sans-serif;
         margin-bottom: 2%;
         font-size: calc(1vw + 1vh);
         font-style: normal;
     }
-    
+
     #lab-name {
         margin: auto;
         padding: 2rem;
@@ -1182,7 +1182,7 @@ body {
         justify-content: center;
         position: absolute;
     }
-    
+
     .lab-name-container {
         margin: auto;
         align-content: center;
@@ -1191,7 +1191,7 @@ body {
         width: 100%;
         height: 100%;
     }
-    
+
     .lab-name-content {
         color: white;
         align-content: center;
@@ -1202,7 +1202,7 @@ body {
         width: 100%;
         height: 100%;
     }
-    
+
     #what-we-study {
         justify-content: left;
         top: 100vh;
@@ -1211,8 +1211,8 @@ body {
         background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
         position: absolute;
     }
-    
-    
+
+
     .study-container {
         position: absolute;
         top: 10%;
@@ -1221,14 +1221,14 @@ body {
         margin-right: 8%;
         margin-left: 5%;
     }
-    
+
     .study-content h1 {
         text-align: left;
         letter-spacing: 2px;
         font-size: 50px;
         margin-bottom: 50px;
     }
-    
+
     .study-content p {
         text-align: left;
         font-family: "Jost", sans-serif;
@@ -1237,7 +1237,7 @@ body {
         font-size: 20px;
         margin-top: 20px;
     }
-    
+
     .three-items {
         margin: auto;
         display: grid;
@@ -1247,24 +1247,24 @@ body {
         width: 100%;
         position: absolute;
     }
-    
+
     .item img {
         margin: auto;
         display: flex;
         margin-top: 30px;
     }
-    
+
     .item h3 {
         text-align-last: center;
         letter-spacing: 2px;
     }
-    
+
     .item p {
         text-align: center;
         font-family: "Jost", sans-serif;
         font-size: 16px;
     }
-    
+
     #button2 {
         margin-top: 10px;
         border-radius: 50%;
@@ -1280,44 +1280,44 @@ body {
         right: 0;
         bottom: -8rem;
     }
-    
-    
+
+
     .fadeInUp-animation {
         animation: 1.5s fadeInUp;
     }
-    
+
     @keyframes fadeInUp {
         0% {
             transform: translateY(100%);
             opacity: 0;
         }
-    
+
         100% {
             transform: translateY(0%);
             opacity: 1;
         }
     }
-    
-    
+
+
     .lab-name-content h3 {
         text-align-last: center;
         letter-spacing: 2px;
         /* position:absolute; */
     }
-    
+
     .lab-name-content h1 {
         letter-spacing: 5px;
         font-size: 60px;
         text-align-last: center;
         /* position:absolute; */
     }
-    
+
     .lab-name-content h4 {
         letter-spacing: 2px;
         text-align-last: center;
         /* position:absolute; */
     }
-    
+
     #how-we-do-it {
         margin: auto;
         align-content: center;
@@ -1328,34 +1328,34 @@ body {
         background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
         position: absolute;
     }
-    
+
     .how-it-content {
         transform: translate(-5%, -60%);
         margin-left: 10%;
     }
-    
+
     .fade {
         transition: opacity 0.7s ease-in;
     }
-    
+
     .fadeOut {
         opacity: 0;
     }
-    
+
     .fadeIn {
         opacity: 1;
     }
-    
+
     .how-it-container {
         position: absolute;
     }
-    
+
     .title-how-it {
         font-size: 50px;
         letter-spacing: 2px;
         color: black;
     }
-    
+
     .five-items {
         margin: auto;
         display: grid;
@@ -1366,27 +1366,27 @@ body {
         position: relative;
         align-items: left;
     }
-    
+
     .oneitem img {
         margin: auto;
         display: absolute;
         margin-top: 30px;
         align-items: left;
     }
-    
+
     .oneitem h2 {
         text-align: left;
         letter-spacing: 2px;
         color: black
     }
-    
+
     .oneitem p {
         text-align: left;
         font-family: "Jost", sans-serif;
         font-size: 16px;
         color: black
     }
-    
+
     #button3 {
         margin-top: 10px;
         border-radius: 50%;
@@ -1401,7 +1401,5 @@ body {
         height: 50px;
         right: 0;
         left: 127%;
-    }  
+    }
 }
-
-
