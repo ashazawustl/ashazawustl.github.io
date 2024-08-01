@@ -102,11 +102,15 @@ body {
 
 }
 
-
-#lab-name {
-    align-items: center;
+.lab-name-content p{
+    margin: auto;
+    align-content: center;
     justify-content: center;
-    left: -3%;
+    position: absolute;
+    margin-left: 42.5%;
+    margin-top: 2%;
+    font-size: 10px;
+    font-family: "Jost", sans-serif;
 }
 
 .lab-name-content h1 {
@@ -143,6 +147,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 20%;
 }
 
 .lab-name-content {
