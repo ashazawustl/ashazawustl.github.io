@@ -1071,22 +1071,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        min-height: 210vh;
-        overflow-x: hidden;
-    }
-
-    #myVideo {
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        width: 210vh;
-        max-height: 100vh;
-        object-fit: cover;
-        z-index: -1;
-        filter: brightness(0.6);
-    }
+@media only screen and (max-width: 768px) {
 
     .navbar {
         transition: all 0.5s;

@@ -154,12 +154,122 @@ body {
     }
 }
 
-@media only screen and (max-width : 643px){
-    .container .heading{
-        width: 100%;
+
+@media screen and (max-width:1600px) {
+    body {
+        min-height: 210vh;
+        overflow-x: hidden;
     }
 
-    .container .header h3{
-        font-size: 1em;
+
+    .navbar {
+        transition: all 0.5s;
     }
+
+    .nav-item {
+        padding: 1%;
+        left: 0;
+    }
+
+    .navbar-nav {
+        margin-left: 44%;
+    }
+
+    .navbar-brand {
+        margin-left: 1%;
+    }
+
+    .navbar-logo {
+        width: 100px;
+        height: 100px;
+        padding: .5%;
+        margin-left: 2.5%;
+    }
+
+    .smart-scroll {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .scrolled-down {
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .scrolled-up {
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .p {
+        font-family: "Jost", sans-serif;
+        color: #000;
+        font-size: 16px;
+        float: right;
+        margin-top: 15px;
+    }
+
+}
+
+@media only screen and (max-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        transition: all 0.5s;
+    }
+
+    .nav-item {
+        padding: 1%;
+        left: 0;
+    }
+
+    .navbar-nav {
+        margin-left: 44%;
+    }
+
+    .navbar-brand {
+        margin-left: 1%;
+    }
+
+    .navbar-logo {
+        width: 100px;
+        height: 100px;
+        padding: .5%;
+        margin-left: 2.5%;
+    }
+
+    .smart-scroll {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .scrolled-down {
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .scrolled-up {
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .p {
+        font-family: "Jost", sans-serif;
+        color: #000;
+        font-size: 16px;
+        float: right;
+        margin-top: 15px;
+    }
+
+
 }
