@@ -96,7 +96,7 @@ body {
     }
 }
 
-.current-members-photos {
+.current-members-section .full-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -112,9 +112,8 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    translate: 40%;
+    /* translate: 40%; */
     margin-bottom: 10px;
-    ;
 }
 
 hr {
@@ -144,7 +143,7 @@ h2 {
     font-size: 20px;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .past-members-section {
@@ -153,22 +152,43 @@ h2 {
     height: auto;
 }
 
-.past-members-names {
-    margin-left: 4%;
+.past-members-section .past-members-names {
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(8, 0.5fr);
-    width: 55%;
+    grid-template-columns: repeat(6, 0.5fr);
+    width: 100%;
 }
 
 .past-members-names h2 {
-    font-size: 20px;
-}
-
-.past-members-names p {
     font-size: 16px;
 }
 
+.past-members-names p {
+    font-size: 12px;
+}
+
+.past-members-section .past-members-names .grid-item{
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 769px){
+    .current-members-section .full-grid{
+        flex-direction: column;
+    }
+
+    .current-members-section .full-grid .grid-item{
+        width: 100%;
+    }
+
+    .past-members-section .past-members-names{
+        flex-direction:column;
+    }
+
+    .current-members-section .past-members-names .grid-item{
+        width:100%;
+    }
+}
 
 @media screen and (max-width:1600px) {
     body {

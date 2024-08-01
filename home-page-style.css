@@ -1224,8 +1224,13 @@ body {
         font-family: "Jost", sans-serif;
         line-height: 2rem;
         margin-right: 50%;
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 20px;
+    }
+
+    .study-img {
+        margin-left: 50%;
+        margin-top: -10%;
     }
 
     .three-items {
