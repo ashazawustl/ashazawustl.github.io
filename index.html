@@ -31,27 +31,6 @@
 
 <body>
 
-    <section class="lab-intro">
-        <video autoplay muted loop id="myVideo">
-            <source src="/home-page-assets/alston.mp4" type="video/mp4">
-        </video>
-        <div id="lab-name">
-            <div class="lab-name-container">
-                <div class="lab-name-content">
-                    <h3 class="fadeInUp-animation">Washington University in St. Louis - Dept. of Neuroscience </h3>
-                    <br>
-                    <h1 class="fadeInUp-animation">Oviedo Lab</h1>
-                    <br>
-                    <h4 class="fadeInUp-animation">Exploring Cortical Audio Processing</h4>
-                    <button id="button1" class="fadeInUp-animation" onclick="middle()">Learn more &#10230; </button>
-                    <p class = "fadeInUp-animation">Video: Alston mouse in the Monteverde Rainforest</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <img class="bg-image" src="/home-page-assets/Screenshot 2024-07-26 at 12.57.47 PM.png" alt="Bg image"> -->
-
     <nav class="navbar smart-scroll navbar-expand-sm navbar-dark fixed-top">
         <div class="container-fluid">
             <img class="navbar-logo" src="/home-page-assets/final_lab_logo-removebg-preview.svg" alt="navbarlogo">
@@ -68,8 +47,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="publications-page.html">Publications</a>
                     </li>
-                    <li class = "nav-item">
-                        <a class = "nav-link" href = "research-page.html">Research</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research-page.html">Research</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="team-page.html">Team</a>
@@ -85,9 +64,32 @@
         </div>
     </nav>
 
+    <br>
+
+    <section class="lab-intro">
+        <video autoplay muted loop id="myVideo">
+            <source src="/home-page-assets/alston.mp4" type="video/mp4">
+        </video>
+        <div id="lab-name">
+            <div class="lab-name-container">
+                <div class="lab-name-content">
+                    <h3 class="fadeInUp-animation">Washington University in St. Louis - Dept. of Neuroscience </h3>
+                    <br>
+                    <h1 class="fadeInUp-animation">Oviedo Lab</h1>
+                    <br>
+                    <h4 class="fadeInUp-animation">Exploring Cortical Audio Processing</h4>
+                    <button id="button1" class="fadeInUp-animation" onclick="middle()">Learn more &#10230; </button>
+                    <p class="fadeInUp-animation">Video: Alston mouse in the Monteverde Rainforest</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
     <section id="what-we-study">
-        <article class="study-container ">
-            <div class="tag study-content">
+        <div class="what-we-study-content1">
+            <div class="tag left">
                 <h1>What We Study</h1>
                 <p> Animals rely on sounds for survival, and social/reproductive interactions. Our brain must
                     perform the
@@ -108,64 +110,82 @@
                     these unique circuit features in the Auditory Cortex and determine their behavioral
                     significance.
                 </p>
-                <img class = "study-img" src = "/home-page-assets/Screenshot_2024-07-30_at_11.32.57_AM-removebg-preview.png"/>
-                <div class="three-items">
-                    <div class="item">
-                        <img src="/home-page-assets/Beyond_Pathway_Analysis_Identification_of_Active_Subnetworks_in_Rett_Syndrome_(fig_4).jpg">
-                        <h3>Rett Syndrome</h3>
-                        <p>lols</p>
-                    </div>
-                    <div class="item">
-                        <img src="/home-page-assets/Hierarchical_models_of_processing_intelligible_speech_Fnhum-04-00051-g001.jpg">
-                        <h3>Left & Right Auditory Cortex</h3>
-                        <p>lols</p>
-                    </div>
-                    <div class="item">
-                        <img src="/home-page-assets/Lab_mouse_mg_3213.jpg">
-                        <h3>Behavioral Response</h3>
-                        <p>lols</p>
-                    </div>
-                </div>
-                <button id="button2" onclick="bottom()">
-                    ↓ </button>
             </div>
+
+            <div class="tag right">
+                <img class="study-img"
+                    src="/home-page-assets/Screenshot_2024-07-30_at_11.32.57_AM-removebg-preview.png" />
             </div>
+        </div>
+
+        <div class="tag what-we-study-content2">
+            <div class="item">
+                <img src="/home-page-assets/Beyond_Pathway_Analysis_Identification_of_Active_Subnetworks_in_Rett_Syndrome_(fig_4).jpg"
+                    class="pic">
+                <h3>Rett Syndrome</h3>
+                <p>lols</p>
+            </div>
+            <div class="item">
+                <img src="/home-page-assets/Hierarchical_models_of_processing_intelligible_speech_Fnhum-04-00051-g001.jpg"
+                    class="pic">
+                <h3>Left & Right Auditory Cortex</h3>
+                <p>lols</p>
+            </div>
+
+            <div class="item">
+                <img src="/home-page-assets/Lab_mouse_mg_3213.jpg" class="pic">
+                <h3>Behavioral Response</h3>
+                <p>lols</p>
+            </div>
+
+
+        </div>
+
+        <div class="tag pagebutton">
+            <button id="button2" onclick="bottom()">
+                ↓ </button>
+        </div>
+
     </section>
 
 
     <section id="how-we-do-it">
         <div class="how-it-container">
             <div class="how-it-content">
-                <h1 class="tag title-how-it">How we do it</h1>
+                <h1>How we do it</h1>
                 <br>
-                <div class="tag five-items">
-                    <div class="oneitem one">
-                        <img src="/home-page-assets/IMG_0882-removebg-preview.png">
-                        <h2>Spatial Transcriptomics</h2>
-                        <p>blurb</p>
-                    </div>
-                    <div class="oneitem two">
-                        <img src="/home-page-assets/Screenshot_2024-07-30_at_12.00.35_PM-removebg-preview.png">
-                        <h2>Circuit Mapping</h2>
-                        <p>blurb</p>
-                    </div>
-                    <div class="oneitem three">
-                        <img src="/home-page-assets/IMG_0886-removebg-preview.png">
-                        <h2>In Vivo Electrophysiology</h2>
-                        <p>blurb</p>
-                    </div>
-                    <div class="oneitem four">
-                        <img src="/home-page-assets/IMG_0884-removebg-preview.png">
-                        <h2>Behavior</h2>
-                        <p>blurb</p>
-                    </div>
-                    <div class="oneitem five">
-                        <img src="/home-page-assets/IMG_0881-removebg-preview.png">
-                        <h2>Imaging</h2>
-                        <p>blurb</p>
-                    </div>
+            </div>
+            <div class="tag five-items">
+                <div class="oneitem">
+                    <img src="/home-page-assets/IMG_0882-removebg-preview.png" class = "s">
+                    <h2>Transcriptomics</h2>
+                    <p>blurb</p>
                 </div>
-                <button id="button3" class = "tag" onclick="toTop()"> ↑ </button>
+                <div class="oneitem">
+                    <img src="/home-page-assets/Screenshot_2024-07-30_at_12.00.35_PM-removebg-preview.png" class = "c">
+                    <h2>Circuit Mapping</h2>
+                    <p>blurb</p>
+                </div>
+                <div class="oneitem">
+                    <img src="/home-page-assets/IMG_0886-removebg-preview.png" class = "i">
+                    <h2>Electrophysiology</h2>
+                    <p>blurb</p>
+                </div>
+                <div class="oneitem">
+                    <img src="/home-page-assets/IMG_0884-removebg-preview.png" class = "b">
+                    <h2>Behavior</h2>
+                    <p>blurb</p>
+                </div>
+                <div class="oneitem">
+                    <img src="/home-page-assets/IMG_0881-removebg-preview.png" class = "g">
+                    <h2>Imaging</h2>
+                    <p>blurb</p>
+                </div>
+            </div>
+
+            <div class = "tag pagebutton">
+                <button id="button3" class="tag" onclick="toTop()"> ↑ </button>
+
             </div>
         </div>
     </section>

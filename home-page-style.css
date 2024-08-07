@@ -102,7 +102,7 @@ body {
 
 }
 
-.lab-name-content p{
+.lab-name-content p {
     margin: auto;
     align-content: center;
     justify-content: center;
@@ -161,23 +161,57 @@ body {
     height: 100%;
 }
 
-#what-we-study {
-    justify-content: left;
-    top: 100vh;
-    width: 210vh;
-    height: 115vh;
-    background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
-    position: absolute;
+.lab-intro {
+    width: 100%;
+    height: auto;
 }
 
+#what-we-study {
+    width: 100%;
+    height: auto;
+    transform: translate(0, 82vh);
+    background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
+    display: absolute;
+}
 
-.study-container {
+.what-we-study-content1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: auto;
+    padding: 5%;
+}
+
+.what-we-study-content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: auto;
+    padding: 2%;
+}
+
+.pagebutton {
+    display: block;
+    padding: 5%;
+    text-align: right;
+}
+
+#button2 {
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    color: black;
+    background: white;
+    cursor: pointer;
     position: absolute;
-    top: 10%;
-    justify-content: left;
-    align-items: left;
-    margin-right: 8%;
-    margin-left: 5%;
+    width: 50px;
+    height: 50px;
+}
+
+.study-img {
+    margin-left: 20%;
+
 }
 
 .study-content h1 {
@@ -187,20 +221,20 @@ body {
     margin-bottom: 50px;
 }
 
-.study-content p {
+.left {
+    margin-left: 10%;
+}
+
+.left p {
     text-align: left;
     font-family: "Jost", sans-serif;
     line-height: 2rem;
-    margin-right: 50%;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 2%;
 }
 
-.study-img {
-    margin-left: 60%;
-    margin-top: -25%;
-}
+
 
 .tag {
     opacity: 0;
@@ -213,56 +247,20 @@ body {
     transform: translate(0, 0);
 }
 
-.three-items {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: center;
-    width: 100%;
-    position: absolute;
-}
-
-.item img {
+.pic {
     margin: auto;
     display: absolute;
-    width: 30%;
-    height: 50%;
+    width: 25%;
+    height: 53%;
     border-radius: 50%;
     border: 1px solid black;
     border-color: black;
-    margin-bottom: 10%;
-    transform: translate(120%, 0);
-    margin-top: 30px;
+    margin-bottom: 5%;
 }
 
-.item h3 {
-    text-align-last: center;
-    letter-spacing: 2px;
+.item {
+    text-align: center;
 }
-
-.item p {
-    text-align-last: center;
-    font-family: "Jost", sans-serif;
-    font-size: 16px;
-}
-
-#button2 {
-    margin-top: 10px;
-    border-radius: 50%;
-    padding: 1rem 1rem;
-    font-size: 1rem;
-    border: 1px solid black;
-    color: black;
-    background: white;
-    cursor: pointer;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right: 0;
-    bottom: -25rem;
-}
-
 
 .fadeInUp-animation {
     animation: 1.5s fadeInUp;
@@ -305,16 +303,11 @@ body {
     align-content: center;
     justify-content: center;
     top: 210vh;
-    width: 210vh;
-    height: 115vh;
+    width: 100%;
+    height: auto;
     background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
     position: absolute;
 }
-
-/* .how-it-content {
-    transform: translate(-5%, -55%);
-    margin-left: 10%;
-} */
 
 .fade {
     transition: opacity 0.7s ease-in;
@@ -331,49 +324,29 @@ body {
 .how-it-container {
     position: absolute;
     margin-top: 10%;
+    margin-left: 10%;
 }
 
-.title-how-it {
-    font-size: 50px;
-    letter-spacing: 2px;
-    color: black;
+.how-it-content {
+    display: block;
+    padding: 1%;
 }
+
 
 .five-items {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-top: 20%;
     position: relative;
     align-items: left;
 }
 
-.oneitem img {
+.oneitem {
     margin: auto;
     display: absolute;
     align-items: left;
-}
-
-.one img{
-    width: 60%;
-    margin-bottom: 10%;
-}
-
-.two img{
-    width: 30%;
-}
-
-.three img {
-    width: 33%;
-}
-
-.four img {
-    width: 60%;
-}
-
-.five img{
-    width: 56%;
+    padding: 1.5%;
 }
 
 .oneitem h2 {
@@ -389,8 +362,27 @@ body {
     color: black
 }
 
+.s {
+    width: 50%;
+    height: 35%;
+}
+
+.i {
+    width: 28%;
+    height: 30%;
+}
+
+.b {
+    width: 50%;
+    height: 35%;
+}
+
+.g {
+    width: 50%;
+    height: 35%;
+}
+
 #button3 {
-    margin-top: 10px;
     border-radius: 50%;
     padding: 1rem 1rem;
     font-size: 1rem;
@@ -401,8 +393,6 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
-    right: 0;
-    left: 98%;
 }
 
 @media screen and (max-width:1600px) {
