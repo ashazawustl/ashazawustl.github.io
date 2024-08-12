@@ -9,7 +9,7 @@ function bottom() {
 }
 
 function toTop(){
-  const goToTop = document.getElementById("lab-name");
+  const goToTop = document.getElementById("lab-intro");
   goToTop.scrollIntoView({behavior: "smooth", block: "center"});
 }
 
