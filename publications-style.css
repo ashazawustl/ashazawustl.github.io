@@ -111,7 +111,8 @@ hr {
 }
 
 section{
-    height: 40vh;
+    height: auto;
+    padding: 1%;
 }
 
 .tag{
