@@ -125,7 +125,7 @@ h6 {
     transition: all 0.3s ease-in-out;
 }
 
-.pub-page-title{
+.pub-page-title {
     font-family: "Julius Sans One", sans-serif;
     font-size: 20px;
     text-align: center;
@@ -149,55 +149,56 @@ h6 {
 }
 
 hr {
-    height: 2px; 
+    height: 2px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 10%;
     text-align-last: center;
-    transform: translate(450%,0);
-    background-color: rgb(120, 118, 118); 
-    border: none; 
+    transform: translate(450%, 0);
+    background-color: rgb(120, 118, 118);
+    border: none;
 }
 
-.page-sections h2{
+.page-sections h2 {
     margin: 0;
     padding: 0;
     font-family: "Julius Sans One", sans-serif;
     font-size: 30px;
-    text-align: left; 
+    text-align: left;
 }
 
-section{
+section {
     height: auto;
     padding: 1%;
 }
 
-.tag{
+.tag {
     opacity: 0;
-    transform: translate(0,10vh);
+    transform: translate(0, 10vh);
     transition: all 1s;
 }
 
-.page-sections .tag.visible{
+.page-sections .tag.visible {
     opacity: 1;
-    transform: translate(0,0);
+    transform: translate(0, 0);
 }
 
-.twenty24{
+.twenty24 {
     background: rgb(199, 199, 199);
 }
 
-.twenty24 a{
-    color: black;  
+.twenty24 a {
+    color: black;
 }
 
-.page-sections h2{
+.page-sections h2 {
     margin-left: 5rem;
     margin-top: 30px;
 
 }
-.twenty24 .twenty24-list{
+
+.twenty24 .twenty24-list {
     font-family: "Jost", sans-serif;
     margin-top: 30px;
     margin-left: 5rem;
@@ -205,14 +206,15 @@ section{
     margin-right: 10rem;
 }
 
-.twenty24 p{
+.twenty24 p {
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
     margin-left: 5rem;
     color: black;
 }
-.twenty22 .twenty22-list{
+
+.twenty22 .twenty22-list {
     margin-top: 30px;
     margin-left: 5rem;
     font-size: 20px;
@@ -220,130 +222,282 @@ section{
     color: white;
 }
 
-.twenty22 h2{
+.twenty22 h2 {
     color: white;
 }
 
-.twenty20 h2{
+.twenty20 h2 {
     color: white;
 }
 
-.twenty17-and-earlier h2{
+.twenty17-and-earlier h2 {
     color: white;
 }
 
-.twenty22 a{
+.twenty22 a {
     color: white;
 }
 
-.paper{
+.paper {
     text-decoration: none;
     transition: all .2s ease-in-out;
 }
 
-a.paper:hover{
+a.paper:hover {
     font-size: 120%;
     text-decoration: none;
     color: inherit;
 }
 
-.ext{
+.ext {
     width: 1%;
     display: inline-block;
 }
 
-.twenty21 a{
+.twenty21 a {
     color: black;
 }
 
-.twenty20 a{
+.twenty20 a {
     color: white;
 }
 
-.twenty19 a{
+.twenty19 a {
     color: black;
 }
 
-.twenty17-and-earlier a{
+.twenty17-and-earlier a {
     color: white;
 }
 
-.twenty22 p{
+.twenty22 p {
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
     margin-left: 5rem;
     color: white;
 }
-.twenty21 .twenty21-list{
+
+.twenty21 .twenty21-list {
     font-family: "Jost", sans-serif;
     margin-top: 30px;
     margin-left: 5rem;
     font-size: 20px;
     margin-right: 10rem;
 }
-.twenty21 p{
+
+.twenty21 p {
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
     color: black;
-}
-.twenty20 .twenty20-list{
-    margin-top: 30px;
-    margin-left: 5rem;
-    font-size: 20px;
-    margin-right: 10rem;
-}
-.twenty20 p{
-    font-family: "Jost", sans-serif;
-    font-size: 15px;
-    margin-top: 20px;
-    margin-left: 5rem;
-    color: white;
-}
-.twenty19 .twenty19-list{
-    margin-top: 30px;
-    margin-left: 5rem;
-    font-size: 20px;
-    margin-right: 10rem;
-}
-.twenty19 p{
-    font-family: "Jost", sans-serif;
-    font-size: 15px;
-    margin-top: 20px;
-    margin-left: 5rem;
-    color: black;
-}
-.twenty17-and-earlier p{
-    font-family: "Jost", sans-serif;
-    font-size: 15px;
-    margin-top: 20px;
-    color: white;
-}
-.twenty17-and-earlier .twenty17-list{
-    margin-top: 30px;
-    margin-left: 5rem;
-    font-size: 20px;
-    margin-right: 10rem;
-}
-.twenty22{
-    background:  black;
-}
-.twenty21{
-    background: rgb(199, 199, 199);
 }
 
-.twenty20{
+.twenty20 .twenty20-list {
+    margin-top: 30px;
+    margin-left: 5rem;
+    font-size: 20px;
+    margin-right: 10rem;
+}
+
+.twenty20 p {
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 5rem;
+    color: white;
+}
+
+.twenty19 .twenty19-list {
+    margin-top: 30px;
+    margin-left: 5rem;
+    font-size: 20px;
+    margin-right: 10rem;
+}
+
+.twenty19 p {
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 5rem;
+    color: black;
+}
+
+.twenty17-and-earlier p {
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    color: white;
+}
+
+.twenty17-and-earlier .twenty17-list {
+    margin-top: 30px;
+    margin-left: 5rem;
+    font-size: 20px;
+    margin-right: 10rem;
+}
+
+.twenty22 {
     background: black;
 }
-.twenty19{
+
+.twenty21 {
     background: rgb(199, 199, 199);
 }
-.twenty17-and-earlier{
+
+.twenty20 {
+    background: black;
+}
+
+.twenty19 {
+    background: rgb(199, 199, 199);
+}
+
+.twenty17-and-earlier {
     background: black;
     height: auto;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
 
+    .navbar-nav{
+        text-align: right;
+    }
+
+    .nav-item{
+        right: 100%;
+    }
+
+    .navbar-brand{
+        width: 80%;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+    }
+
+    .navbar span {
+        width: 100%;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .navbar-logo{
+        width: 15%;
+        height:15%;
+    }
+
+    .page-sections h2 {
+        margin-left: 2rem;
+        margin-top: 30px;
+    
+    }
+
+    .paper{
+        width: 100%;
+    }
+
+    .ext{
+        width: 5%;
+    }
+
+    .twenty24 .twenty24-list {
+        font-family: "Jost", sans-serif;
+        margin-top: 30px;
+        margin-left: 2rem;
+        font-size: 14px;
+        margin-right: 10rem;
+        width: 85%;
+    }
+    
+    .twenty24 p {
+        font-family: "Jost", sans-serif;
+        font-size: 11px;
+        margin-top: 20px;
+        margin-left: 2rem;
+        color: black;
+    }
+
+    .twenty22 .twenty22-list {
+        font-family: "Jost", sans-serif;
+        margin-top: 30px;
+        margin-left: 2rem;
+        font-size: 14px;
+        margin-right: 10rem;
+        width: 85%;
+    }
+    
+    .twenty22 p {
+        font-family: "Jost", sans-serif;
+        font-size: 11px;
+        margin-top: 20px;
+        margin-left: 2rem;
+        color: white;
+    }
+
+    .twenty21 .twenty21-list {
+        font-family: "Jost", sans-serif;
+        margin-top: 30px;
+        margin-left: 2rem;
+        font-size: 14px;
+        margin-right: 10rem;
+        width: 85%;
+    }
+    
+    .twenty21 p {
+        font-family: "Jost", sans-serif;
+        font-size: 11px;
+        margin-top: 20px;
+        color: black;
+    }
+
+
+    .twenty20 .twenty20-list {
+        font-family: "Jost", sans-serif;
+        margin-top: 30px;
+        margin-left: 2rem;
+        font-size: 14px;
+        margin-right: 10rem;
+        width: 85%;
+    }
+    
+    .twenty20 p {
+        font-family: "Jost", sans-serif;
+        font-size: 11px;
+        margin-top: 20px;
+        margin-left: 2rem;
+        color: white;
+    }
+
+    .twenty19 .twenty19-list {
+        font-family: "Jost", sans-serif;
+        margin-top: 30px;
+        margin-left: 2rem;
+        font-size: 14px;
+        margin-right: 10rem;
+        width: 85%;
+    }
+    
+    .twenty19 p {
+        font-family: "Jost", sans-serif;
+        font-size: 11px;
+        margin-top: 20px;
+        margin-left: 2rem;
+        color: black;
+    }
+
+    .twenty17-and-earlier p {
+        font-family: "Jost", sans-serif;
+        font-size: 11px;
+        margin-top: 20px;
+        color: white;
+    }
+    
+    .twenty17-and-earlier .twenty17-list {
+        margin-top: 30px;
+        margin-left: 2rem;
+        font-size: 14px;
+        margin-right: 10rem;
+        width: 85%;
+    }
 }
