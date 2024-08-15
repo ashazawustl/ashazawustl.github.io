@@ -330,4 +330,19 @@ a.paper:hover{
     background:  black;
 }
 .twenty21{
-    background: rgb(199, 1
+    background: rgb(199, 199, 199);
+}
+.twenty20{
+    background: black;
+}
+.twenty19{
+    background: rgb(199, 199, 199);
+}
+.twenty17-and-earlier{
+    background: black;
+    height: auto;
+}
+
+@media screen and (max-width: 500px){
+
+}
