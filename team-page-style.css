@@ -135,7 +135,7 @@ h6 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 30px;
-    color:white;
+    color: white;
 }
 
 .fadeInUp-animation {
@@ -154,19 +154,27 @@ h6 {
     }
 }
 
-.current-members-section .full-grid{
+.current-members-section .full-grid {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-gap: auto;
     width: auto;
 }
 
+.current-members-section h2 {
+    color: #000;
+}
+
+.current-members-section p {
+    color: #000;
+}
+
 .grid-item {
     padding: 50px;
 }
 
-.img-item{
-    display:grid;
+.img-item {
+    display: grid;
     place-items: center;
 }
 
@@ -196,7 +204,7 @@ p {
 }
 
 .profile {
-    color:#000;
+    color: #000;
 }
 
 h2 {
@@ -210,7 +218,7 @@ h2 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 10px;
-    color:white;
+    color: white;
 }
 
 .past-members-section {
@@ -229,15 +237,70 @@ h2 {
 
 .past-members-names h2 {
     font-size: 16px;
-    color:white;
+    color: white;
 }
 
 .past-members-names p {
     font-size: 12px;
-    color:white;
+    color: white;
 }
 
-.past-members-section .past-members-names .grid-item{
+.past-members-section .past-members-names .grid-item {
     padding: 10px;
 }
 
+@media screen and (max-width:500px) {
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .nav-item {
+        right: 100%;
+    }
+
+    .navbar-brand {
+        width: 80%;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+    }
+
+    .navbar span {
+        width: 100%;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        width: 15%;
+        height: 15%;
+    }
+
+    .current-members-section .full-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: auto;
+        width: auto;
+    }
+
+    .past-members-section .past-members-names {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+        width: 100%;
+    }
+
+
+    .past-members-names h2 {
+        font-size: 12px;
+        color: white;
+    }
+
+    .past-members-names p {
+        font-size: 10px;
+        color: white;
+    }
+
+
+}
