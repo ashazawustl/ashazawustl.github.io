@@ -230,6 +230,11 @@ h6 {
 
 
 @media screen and (max-width: 500px){
+
+    .navbar-toggler{
+        width: 10%;
+    }
+    
     .img-container {
         text-align: center;
         height: 250px;

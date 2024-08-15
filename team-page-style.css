@@ -250,6 +250,10 @@ h2 {
 }
 
 @media screen and (max-width:500px) {
+
+    .navbar-toggler{
+        width: 10%;
+    }
     .navbar-nav {
         text-align: right;
     }
