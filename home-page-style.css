@@ -173,7 +173,7 @@ p {
     font-size: 16px;
 }
 
-.lab-name p{
+.lab-name p {
     font-size: 14px;
 }
 
@@ -205,11 +205,6 @@ p {
     grid-template-rows: 1fr;
     grid-gap: auto;
     padding: 5%;
-}
-
-.image1 {
-    object-fit: contain;
-    grid-area: image1;
 }
 
 .study-img img {
@@ -322,8 +317,8 @@ p {
     padding: 1%;
 }
 
-.how-it-content  h1{
-    color:white;
+.how-it-content h1 {
+    color: white;
 }
 
 .five-items {
@@ -401,6 +396,175 @@ p {
     color: #000;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
+    .navbar-toggler {
+        width: 10%;
+    }
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .nav-item {
+        right: 100%;
+    }
+
+    .navbar-brand {
+        width: 80%;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+    }
+
+    .navbar span {
+        width: 100%;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        width: 15%;
+        height: 15%;
+    }
+
+    .lab-name {
+        color: white;
+        padding: 2%;
+        width: 50%;
+        height: 40%;
+        text-align: center;
+        transform: translate(50%, 0%);
+    }
+
+    .lab-name h3 {
+        font-size: 5px;
+    }
+
+    .lab-name h1 {
+        font-size: 20px;
+    }
+
+    .lab-name h4 {
+        font-family: "Jost", sans-serif;
+        font-size: 10px;
+    }
+
+    .lab-name p {
+        font-size: 8px;
+    }
+
+    #button1 {
+        border-radius: 30px;
+        padding: 5px 10px;
+        font-size: 5px;
+        border: none;
+        color: black;
+        background: white;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        letter-spacing: 2px;
+
+    }
+
+    .myVideo {
+        width: 100%;
+    }
+
+    .what-we-study-content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: auto;
+        padding: 5%;
+    }
+
+    .study-img img {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: contain;
+        margin: 0 !important;
+        height: auto;
+    }
+
+    .five-items {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        place-items: center;
+    }
+
+    .leftt {
+        margin-left: 1%;
+    }
+
+    .leftt h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .leftt p{
+        text-align: center;
+        font-size: 12px;
+        line-height: 14px;
+        translate: 5%;
+    }
+
+    .buttonbot {
+        padding: 10%;
+        display: grid;
+        place-items: center;
+    }
+
+    .how-it-content h1 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .pagebutton{
+        padding: 10%;
+        display: grid;
+        place-items: center;
+    }
+
+    .oneitem {
+        margin: auto;
+        display: grid;
+        place-items: center;
+        padding: 1.5%;
+    }
+
+    .oneitem h2{
+        font-size: 18px;
+    }
+
+    .c img{
+        width: 70%;
+        height: 72%;
+    }
+
     
+    .s {
+        width: 70%;
+        height:100%;
+    }
+    
+    .i {
+        width: 50%;
+        height:65%;
+    
+    }
+
+    
+    .b {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .g {
+        width: 45%;
+        height: 100%;
+    }
 }
