@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="home-page-style.css" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
     <script defer type="text/javascript" src="/home-page.js"></script>
 
 
@@ -33,8 +33,10 @@
 
     <nav class="navbar smart-scroll navbar-expand-sm navbar-dark fixed-top">
         <div class="container-fluid">
-            <img class="navbar-logo" src="/home-page-assets/final_lab_logo-removebg-preview.svg" alt="navbarlogo">
-            <a class="navbar-brand" href="index.html">Oviedo Lab</a>
+
+            <a class="navbar-brand" href="index.html">
+                <img class="navbar-logo" src="/home-page-assets/final_lab_logo-removebg-preview.svg" alt="navbarlogo"/>                <span>Oviedo Lab</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -64,103 +66,114 @@
         </div>
     </nav>
 
-    <br>
-
-    <section id="lab-intro">
-        <div class="left">
-            <div class="myVideo">
-                <video autoplay muted loop id="myVideo">
-                    <source src="/home-page-assets/alston.mov" type="video/mp4">
-                </video>
+    <div class="full-wrapper">
+        <section id="lab-intro">
+            <div class="left">
+                <img class="myVideo" src="/home-page-assets/alstonn.gif" alt="big-brain" class="myVideo">
             </div>
-        </div>
-        <div class="right">
-            <div class="lab-name">
-                <h3 class="fadeInUp-animation">Washington University in St. Louis - Dept. of Neuroscience </h3>
-                <h1 class="fadeInUp-animation">Oviedo Lab</h1>
-                <h4 class="fadeInUp-animation">Decoding Vocal Communication</h4>
-                <br>
-                <button id="button1" class="fadeInUp-animation" onclick="middle()">Learn more &#10230; </button>
-                <br>
-                <p class="fadeInUp-animation">Video: Alston mouse in the Monteverde Rainforest</p>
+            <div class="right">
+                <div class="lab-name">
+                    <h3 class="fadeInUp-animation">Washington University in St. Louis - Dept. of Neuroscience </h3>
+                    <h1 class="fadeInUp-animation">Oviedo Lab</h1>
+                    <h4 class="fadeInUp-animation">Decoding Vocal Communication</h4>
+                    <br>
+                    <button id="button1" class="fadeInUp-animation" onclick="middle()">Learn more &#10230; </button>
+                    <br>
+                    <p class="fadeInUp-animation">Video: Alston mouse in the Monteverde Rainforest</p>
 
-            </div>
-        </div>
-    </section>
-
-
-    <section id="what-we-study">
-        <div class="what-we-study-content">
-            <div class="tag leftt">
-                <h1>Research Focus</h1>
-                <p> Animals rely on sounds for survival, and social/reproductive interactions. Our brain must
-                    perform the
-                    challenging tasks of rapidly recognizing, categorizing, and assigning communicative importance
-                    to sounds in
-                    a noisy environment. The instructions to these functions are found in the precise connections
-                    neurons make
-                    with one another. We study evolutionarily conserved mechanisms for decoding social calls in the
-                    Auditory
-                    Cortex of rodents. The organization of the cerebral cortex may appear stereotyped, but new tools
-                    that allow
-                    detailed investigation of neural circuits have revealed significant differences between cortical
-                    areas that
-                    perform different functions. These circuit specializations embedded in stereotyped modules are
-                    now believed
-                    to be the secret ingredients that enable cortical areas to perform specific tasks. Our goal is
-                    to reveal
-                    these unique circuit features in the Auditory Cortex and determine their behavioral
-                    significance.
-                </p>
-            </div>
-
-            <div class="tag rightt">
-                <img class="study-img"
-                    src="/home-page-assets/Screenshot_2024-07-30_at_11.32.57_AM-removebg-preview.png" />
-            </div>
-
-            <div class="buttonbot">
-                <button id="button2" class="fadeInUp-animation" onclick="bottom()">↓</button>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section id="how-we-do-it">
-        <div class="how-it-container">
-            <div class="how-it-content fadeInUp-animation">
-                <h1>Exploratory Tools</h1>
-                <br>
-            </div>
-            <div class="tag five-items">
-                <div class="oneitem">
-                    <img src="/home-page-assets/IMG_0882-removebg-preview.png" class="s">
-                   <a href = "/research-page.html#trans"> <h2>Transcriptomics</h2> </a> 
-                </div>
-                <div class="oneitem c">
-                    <img src="/home-page-assets/Screenshot_2024-07-30_at_12.00.35_PM-removebg-preview.png" class="c">
-                   <a href = "/research-page.html#cmap"><h2>Circuit Mapping</h2> </a> 
-                </div>
-                <div class="oneitem">
-                    <img src="/home-page-assets/IMG_0886-removebg-preview.png" class="i">
-                    <a href = "/research-page.html#hdivt"><h2>high-density in vivo electrophysiology</h2></a>
-                </div>
-                <div class="oneitem">
-                    <img src="/home-page-assets/IMG_0884-removebg-preview.png" class="b">
-                    <a  href = "/research-page.html#beh"><h2>Behavior</h2></a> 
-                </div>
-                <div class="oneitem">
-                    <img src="/home-page-assets/IMG_0881-removebg-preview.png" class="g">
-                    <a href = "/research-page.html#acmap"><h2>activity mapping</h2></a> 
                 </div>
             </div>
+        </section>
 
-            <div class="pagebutton fadeInUp-animation">
-                <button id="button3" class="fadeUpIn-animation" onclick="toTop()"> ↑ </button>
+
+        <section id="what-we-study">
+            <div class="what-we-study-content">
+                <div class="tag leftt">
+                    <h1>Research Focus</h1>
+                    <p> Animals rely on sounds for survival, and social/reproductive interactions. Our brain must
+                        perform the
+                        challenging tasks of rapidly recognizing, categorizing, and assigning communicative importance
+                        to sounds in
+                        a noisy environment. The instructions to these functions are found in the precise connections
+                        neurons make
+                        with one another. We study evolutionarily conserved mechanisms for decoding social calls in the
+                        Auditory
+                        Cortex of rodents. The organization of the cerebral cortex may appear stereotyped, but new tools
+                        that allow
+                        detailed investigation of neural circuits have revealed significant differences between cortical
+                        areas that
+                        perform different functions. These circuit specializations embedded in stereotyped modules are
+                        now believed
+                        to be the secret ingredients that enable cortical areas to perform specific tasks. Our goal is
+                        to reveal
+                        these unique circuit features in the Auditory Cortex and determine their behavioral
+                        significance.
+                    </p>
+                </div>
+
+                <div class="tag rightt">
+                    <div style="width:100%; display:flex; align-items:center; justify-content: center;">
+                        <img class="study-img"
+                            src="/home-page-assets/Screenshot_2024-07-30_at_11.32.57_AM-removebg-preview.png"
+                            alt="big-brain" />
+                    </div>
+
+                </div>
+
+                <div class="buttonbot">
+                    <button id="button2" class="fadeInUp-animation" onclick="bottom()">↓</button>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <section id="how-we-do-it">
+            <div class="how-it-container">
+                <div class="how-it-content fadeInUp-animation">
+                    <h1>Exploratory Tools</h1>
+                    <br>
+                </div>
+                <div class="tag five-items">
+                    <div class="oneitem">
+                        <img src="/home-page-assets/IMG_0882-removebg-preview.png" class="s">
+                        <a href="/research-page.html#trans">
+                            <h2>Transcriptomics</h2>
+                        </a>
+                    </div>
+                    <div class="oneitem c">
+                        <img src="/home-page-assets/Screenshot_2024-07-30_at_12.00.35_PM-removebg-preview.png"
+                            class="c">
+                        <a href="/research-page.html#cmap">
+                            <h2>Circuit Mapping</h2>
+                        </a>
+                    </div>
+                    <div class="oneitem">
+                        <img src="/home-page-assets/IMG_0886-removebg-preview.png" class="i">
+                        <a href="/research-page.html#hdivt">
+                            <h2>high-density in vivo electrophysiology</h2>
+                        </a>
+                    </div>
+                    <div class="oneitem">
+                        <img src="/home-page-assets/IMG_0884-removebg-preview.png" class="b">
+                        <a href="/research-page.html#beh">
+                            <h2>Behavior</h2>
+                        </a>
+                    </div>
+                    <div class="oneitem">
+                        <img src="/home-page-assets/IMG_0881-removebg-preview.png" class="g">
+                        <a href="/research-page.html#acmap">
+                            <h2>activity mapping</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pagebutton fadeInUp-animation">
+                    <button id="button3" class="fadeUpIn-animation" onclick="toTop()"> ↑ </button>
+                </div>
+            </div>
+        </section>
+    </div>
 
 </body>
 

@@ -11,6 +11,9 @@
     font-style: normal;
 }
 
+
+/* regular declarations */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,15 +21,62 @@
     font-family: "Julius Sans One", "Jost", sans-serif;
 }
 
-/* regular declarations */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 
 body {
-    min-height: 210vh;
+    min-height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    background: white !important;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.full-wrapper {
+    width: 100%;
 }
 
 .navbar {
     transition: all 0.5s;
+}
+
+.container-fluid {
+    justify-content: space-between;
 }
 
 .nav-item {
@@ -35,18 +85,25 @@ body {
 }
 
 .navbar-nav {
-    margin-left: 59%;
+    margin: 0;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-.navbar-brand {
-    margin-left: 1%;
+.navbar-brand a {
+    margin: 0;
+    width: 100%;
 }
 
 .navbar-logo {
-    width: 100px;
-    height: 100px;
+    width: 12%;
+    height: 12%;
     padding: .5%;
-    margin-left: 2.5%;
+    display: inline-block;
+}
+
+.navbar span {
+    width: 100%;
 }
 
 .smart-scroll {
@@ -87,7 +144,7 @@ body {
     height: 350px;
     width: 50%;
     object-fit:cover;
-    transform: translate(-50%, -100%);
+    transform: translate(0, -100%);
 }
 
 .fadeInUp-animation {
@@ -113,6 +170,10 @@ body {
     margin-top: 30px;
 }
 
+.container{
+    max-width: 98%;
+}
+
 .positions-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -133,6 +194,11 @@ body {
 
 .grid-item {
     padding: 50px;
+}
+
+.brain-img{
+    display:grid;
+    place-items: center;
 }
 
 .icon-pics{

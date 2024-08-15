@@ -11,6 +11,9 @@
     font-style: normal;
 }
 
+
+/* regular declarations */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,15 +21,63 @@
     font-family: "Julius Sans One", "Jost", sans-serif;
 }
 
-/* regular declarations */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 
 body {
-    min-height: 210vh;
+    min-height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    background: #fff !important;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.full-wrapper {
+    width: 100%;
 }
 
 .navbar {
     transition: all 0.5s;
+}
+
+.container-fluid {
+    justify-content: space-between;
 }
 
 .nav-item {
@@ -35,18 +86,25 @@ body {
 }
 
 .navbar-nav {
-    margin-left: 59%;
+    margin: 0;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-.navbar-brand {
-    margin-left: 1%;
+.navbar-brand a {
+    margin: 0;
+    width: 100%;
 }
 
 .navbar-logo {
-    width: 100px;
-    height: 100px;
+    width: 12%;
+    height: 12%;
     padding: .5%;
-    margin-left: 2.5%;
+    display: inline-block;
+}
+
+.navbar span {
+    width: 100%;
 }
 
 .smart-scroll {
@@ -102,7 +160,7 @@ hr {
     border: none; 
 }
 
-.page-sections h1{
+.page-sections h2{
     margin: 0;
     padding: 0;
     font-family: "Julius Sans One", sans-serif;
@@ -127,22 +185,22 @@ section{
 }
 
 .twenty24{
-    background: linear-gradient(216deg, #645957 7.62%, #aea09e 45.4%, #edebeb 98.67%);
+    background: rgb(199, 199, 199);
 }
 
 .twenty24 a{
-    color: black;
+    color: black;  
 }
 
-.page-sections h1{
-    margin-left: 10rem;
+.page-sections h2{
+    margin-left: 5rem;
     margin-top: 30px;
 
 }
 .twenty24 .twenty24-list{
     font-family: "Jost", sans-serif;
     margin-top: 30px;
-    margin-left: 10rem;
+    margin-left: 5rem;
     font-size: 20px;
     margin-right: 10rem;
 }
@@ -151,31 +209,47 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 12rem;
+    margin-left: 5rem;
     color: black;
 }
 .twenty22 .twenty22-list{
     margin-top: 30px;
-    margin-left: 10rem;
+    margin-left: 5rem;
     font-size: 20px;
     margin-right: 10rem;
     color: white;
 }
 
-.twenty22 h1{
+.twenty22 h2{
     color: white;
 }
 
-.twenty20 h1{
+.twenty20 h2{
     color: white;
 }
 
-.twenty17-and-earlier h1{
+.twenty17-and-earlier h2{
     color: white;
 }
 
 .twenty22 a{
     color: white;
+}
+
+.paper{
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+a.paper:hover{
+    font-size: 120%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ext{
+    width: 1%;
+    display: inline-block;
 }
 
 .twenty21 a{
@@ -198,13 +272,13 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 12rem;
+    margin-left: 5rem;
     color: white;
 }
 .twenty21 .twenty21-list{
     font-family: "Jost", sans-serif;
     margin-top: 30px;
-    margin-left: 10rem;
+    margin-left: 5rem;
     font-size: 20px;
     margin-right: 10rem;
 }
@@ -216,7 +290,7 @@ section{
 }
 .twenty20 .twenty20-list{
     margin-top: 30px;
-    margin-left: 10rem;
+    margin-left: 5rem;
     font-size: 20px;
     margin-right: 10rem;
 }
@@ -224,12 +298,12 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 12rem;
+    margin-left: 5rem;
     color: white;
 }
 .twenty19 .twenty19-list{
     margin-top: 30px;
-    margin-left: 10rem;
+    margin-left: 5rem;
     font-size: 20px;
     margin-right: 10rem;
 }
@@ -237,7 +311,7 @@ section{
     font-family: "Jost", sans-serif;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 12rem;
+    margin-left: 5rem;
     color: black;
 }
 .twenty17-and-earlier p{
@@ -248,143 +322,12 @@ section{
 }
 .twenty17-and-earlier .twenty17-list{
     margin-top: 30px;
-    margin-left: 10rem;
+    margin-left: 5rem;
     font-size: 20px;
     margin-right: 10rem;
 }
 .twenty22{
-    background:  linear-gradient(144deg, #343c3a 5%, #78807d 70%, #cbd1cf);
+    background:  black;
 }
 .twenty21{
-    background: linear-gradient(216deg, #645957 7.62%, #aea09e 45.4%, #edebeb 98.67%);
-}
-.twenty20{
-    background: linear-gradient(144deg, #343c3a 5%, #78807d 70%, #cbd1cf);
-}
-.twenty19{
-    background: linear-gradient(216deg, #645957 7.62%, #aea09e 45.4%, #edebeb 98.67%);
-}
-.twenty17-and-earlier{
-    background: linear-gradient(144deg, #343c3a 5%, #78807d 70%, #cbd1cf);
-    height: auto;
-}
-
-
-@media screen and (max-width:1600px) {
-    body {
-        min-height: 210vh;
-        overflow-x: hidden;
-    }
-
-
-    .navbar {
-        transition: all 0.5s;
-    }
-
-    .nav-item {
-        padding: 1%;
-        left: 0;
-    }
-
-    .navbar-nav {
-        margin-left: 44%;
-    }
-
-    .navbar-brand {
-        margin-left: 1%;
-    }
-
-    .navbar-logo {
-        width: 100px;
-        height: 100px;
-        padding: .5%;
-        margin-left: 2.5%;
-    }
-
-    .smart-scroll {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .scrolled-down {
-        transform: translateY(-100%);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .scrolled-up {
-        transform: translateY(0);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .p {
-        font-family: "Jost", sans-serif;
-        color: #000;
-        font-size: 16px;
-        float: right;
-        margin-top: 15px;
-    }
-
-}
-
-@media only screen and (max-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-
-  
-}
-
-@media only screen and (max-width: 768px) {
-
-    .navbar {
-        transition: all 0.5s;
-    }
-
-    .nav-item {
-        padding: 1%;
-        left: 0;
-    }
-
-    .navbar-nav {
-        margin-left: 44%;
-    }
-
-    .navbar-brand {
-        margin-left: 1%;
-    }
-
-    .navbar-logo {
-        width: 100px;
-        height: 100px;
-        padding: .5%;
-        margin-left: 2.5%;
-    }
-
-    .smart-scroll {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .scrolled-down {
-        transform: translateY(-100%);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .scrolled-up {
-        transform: translateY(0);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .p {
-        font-family: "Jost", sans-serif;
-        color: #000;
-        font-size: 16px;
-        float: right;
-        margin-top: 15px;
-    }
-
-
-}
+    background: rgb(199, 1

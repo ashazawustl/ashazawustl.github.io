@@ -11,6 +11,9 @@
     font-style: normal;
 }
 
+
+
+/* regular declarations */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,15 +21,63 @@
     font-family: "Julius Sans One", "Jost", sans-serif;
 }
 
-/* regular declarations */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 
 body {
-    min-height: 210vh;
+    min-height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    background: #000 !important;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.full-wrapper {
+    width: 100%;
 }
 
 .navbar {
     transition: all 0.5s;
+}
+
+.container-fluid {
+    justify-content: space-between;
 }
 
 .nav-item {
@@ -35,18 +86,25 @@ body {
 }
 
 .navbar-nav {
-    margin-left: 59%;
+    margin: 0;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-.navbar-brand {
-    margin-left: 1%;
+.navbar-brand a {
+    margin: 0;
+    width: 100%;
 }
 
 .navbar-logo {
-    width: 100px;
-    height: 100px;
+    width: 12%;
+    height: 12%;
     padding: .5%;
-    margin-left: 2.5%;
+    display: inline-block;
+}
+
+.navbar span {
+    width: 100%;
 }
 
 .smart-scroll {
@@ -72,62 +130,45 @@ p {
     font-size: 10px;
 }
 
-#lab-intro{
-    margin-top:-10%;
+#lab-intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: auto;
+    grid-template-columns: 50% 50%;
     width: auto;
-    height:auto;
+    height: auto;
 }
 
-.right{
+.right {
     display: flex;
     background-color: black;
-    height:auto;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: auto;
-    width: 100%;
-
-    display: absolute;
 }
 
-.left{
-    display:absolute;
+.left {
+    display: flex;
     background-color: black;
 }
 
-.myVideo{
-    margin-left:-12%;
+.myVideo {
+    width: 100%;
 }
 
-#myVideo{
-    width:100%;
-    height:auto;
-}
-
-.lab-name{
+.lab-name {
     color: white;
-    margin-top:50%;
     padding: 2%;
-    width: 55%;
-    height: auto;
+    width: 50%;
+    height: 40%;
     text-align: center;
-    transform: translate(45%, 0);
+    transform: translate(50%, 50%);
 }
 
-.lab-name h3{
+.lab-name h3 {
     font-size: 12px;
 }
 
-.lab-name h1{
+.lab-name h1 {
     font-size: 60px;
 }
 
-.lab-name h4{
+.lab-name h4 {
     font-family: "Jost", sans-serif;
     font-size: 16px;
 }
@@ -150,22 +191,29 @@ p {
 #what-we-study {
     width: 100%;
     height: auto;
-    background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
+    background: white;
     display: absolute;
 }
 
 .what-we-study-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     grid-gap: auto;
     padding: 5%;
 }
 
-.study-img {
-    margin-left: 12%;
-    margin-top: 5%;
+.image1 {
+    object-fit: contain;
+    grid-area: image1;
+}
 
+.study-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0 !important;
+    height: auto;
 }
 
 .study-content h1 {
@@ -189,12 +237,12 @@ p {
     margin-bottom: 2%;
 }
 
-.rightt{
-    display:absolute;
+.rightt {
+    display: absolute;
 }
 
-.buttonbot{
-    padding:2%;
+.buttonbot {
+    padding: 2%;
 }
 
 #button2 {
@@ -253,7 +301,7 @@ p {
 #how-we-do-it {
     width: 100%;
     height: auto;
-    background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
+    background: black;
 }
 
 
@@ -270,6 +318,9 @@ p {
     padding: 1%;
 }
 
+.how-it-content  h1{
+    color:white;
+}
 
 .five-items {
     margin: auto;
@@ -290,7 +341,7 @@ p {
 .oneitem h2 {
     text-align: left;
     letter-spacing: 2px;
-    color: black
+    color: white
 }
 
 .oneitem p {
@@ -300,11 +351,11 @@ p {
     color: black
 }
 
-.pagebutton{
-    padding:2%;
+.pagebutton {
+    padding: 2%;
 }
 
-.c{
+.c {
     margin-left: -1%;
 }
 
@@ -342,1048 +393,48 @@ p {
     height: 50px;
 }
 
-.oneitem a{
-    color:#000;
+.oneitem a {
+    color: #000;
 }
 
-@media screen and (max-width: 1600px){
-    .julius-sans-one-regular {
-        font-family: "Julius Sans One", sans-serif;
-        font-weight: 1000;
-        font-style: normal;
-    }
-    
-    .jost-regualar {
-        font-family: "Jost", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-    }
-    
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Julius Sans One", "Jost", sans-serif;
-    }
-    
-    /* regular declarations */
-    
-    body {
-        min-height: 210vh;
-        overflow-x: hidden;
-    }
-    
-    .navbar {
-        transition: all 0.5s;
-    }
-    
-    .nav-item {
-        padding: 1%;
-        left: 0;
-    }
-    
-    .navbar-nav {
-        margin-left: 44%;
-    }
-    
-    .navbar-brand {
-        margin-left: 1%;
-    }
-    
+@media screen and (max-width:400px) {
+
     .navbar-logo {
-        width: 100px;
-        height: 100px;
+        width: 10%;
+        height: 10%;
         padding: .5%;
-        margin-left: 2.5%;
+
     }
-    
-    .smart-scroll {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-    
-    .scrolled-down {
-        transform: translateY(-100%);
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .scrolled-up {
-        transform: translateY(0);
-        transition: all 0.3s ease-in-out;
-    }
-    
-    p {
-        font-family: "Jost", sans-serif;
+
+    .lab-name h3 {
         font-size: 10px;
     }
-    
-    #lab-intro{
-        margin-top:-10%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        width: auto;
-        height:auto;
-    }
-    
-    .right{
-        display: flex;
-        background-color: black;
-        height:auto;
-    
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        width: 100%;
-    
-        display: absolute;
-    }
-    
-    .left{
-        display:absolute;
-        background-color: black;
-    }
-    
-    .myVideo{
-        margin-left:-12%;
-    }
-    
-    #myVideo{
-        width:100%;
-        height:auto;
-    }
-    
-    .lab-name{
-        color: white;
-        margin-top:50%;
-        padding: 2%;
-        width: 55%;
-        height: auto;
-        text-align: center;
-        transform: translate(45%, 0);
-    }
-    
-    .lab-name h3{
-        font-size: 12px;
-    }
-    
-    .lab-name h1{
-        font-size: 60px;
-    }
-    
-    .lab-name h4{
-        font-family: "Jost", sans-serif;
-        font-size: 16px;
-    }
-    
-    #button1 {
-        border-radius: 70px;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        border: none;
-        color: black;
-        background: white;
-        cursor: pointer;
-        display: block;
-        margin: auto;
-        letter-spacing: 6px;
-    
-    }
-    
-    
-    #what-we-study {
-        width: 100%;
-        height: auto;
-        background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
-        display: absolute;
-    }
-    
-    .what-we-study-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        padding: 5%;
-    }
-    
+
     .study-img {
-        margin-left: 12%;
-        margin-top: 5%;
-    
-    }
-    
-    .study-content h1 {
-        text-align: left;
-        letter-spacing: 2px;
-        font-size: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .leftt {
-        margin-left: 2%;
-    }
-    
-    .leftt p {
-        text-align: left;
-        font-family: "Jost", sans-serif;
-        line-height: 2rem;
-        font-size: 20px;
-        margin-top: 20px;
-        margin-right: 7%;
-        margin-bottom: 2%;
-    }
-    
-    .rightt{
-        display:absolute;
-    }
-    
-    .buttonbot{
-        padding:2%;
-    }
-    
-    #button2 {
-        border-radius: 50%;
-        padding: 1rem 1rem;
-        font-size: 1rem;
-        border: 1px solid black;
-        color: black;
-        background: white;
-        cursor: pointer;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .tag {
-        opacity: 0;
-        transform: translate(0, 10vh);
-        transition: all 3s;
-    }
-    
-    .tag.visible {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    
-    .fadeInUp-animation {
-        animation: 2.5s fadeInUp;
-    }
-    
-    @keyframes fadeInUp {
-        0% {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-    
-        100% {
-            transform: translateY(0%);
-            opacity: 1;
-        }
-    }
-    
-    .fade {
-        transition: opacity 0.7s ease-in;
-    }
-    
-    .fadeOut {
-        opacity: 0;
-    }
-    
-    .fadeIn {
-        opacity: 1;
-    }
-    
-    
-    #how-we-do-it {
-        width: 100%;
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: contain;
+        margin: 0 !important;
         height: auto;
-        background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
     }
-    
-    
-    .how-it-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        padding: 5%;
+
+    .leftt p {
+        font-size: 8px;
+        line-height: 100%;
     }
-    
-    .how-it-content {
-        display: block;
-        padding: 1%;
+
+    .leftt h1 {
+        font-size: 20px;
     }
-    
-    
-    .five-items {
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        position: relative;
-        align-items: left;
-    }
-    
-    .oneitem {
-        margin: auto;
-        display: absolute;
-        align-items: left;
-        padding: 1.5%;
-    }
-    
-    .oneitem h2 {
-        text-align: left;
-        letter-spacing: 2px;
-        color: black
-    }
-    
-    .oneitem p {
-        text-align: left;
-        font-family: "Jost", sans-serif;
-        font-size: 16px;
-        color: black
-    }
-    
-    .pagebutton{
-        padding:2%;
-    }
-    
-    .c{
-        margin-left: -1%;
-        margin-top: -5%;
-    }
-    
-    .s {
-        width: 50%;
-        height: 35%;
-    }
-    
-    .i {
-        width: 28%;
-        height: 30%;
-        margin-top: -5%;
-    }
-    
-    .b {
-        width: 50%;
-        height: 35%;
-    }
-    
-    .g {
-        width: 45%;
-        height: 33%;
-    }
-    
-    #button3 {
-        border-radius: 50%;
-        padding: 1rem 1rem;
-        font-size: 1rem;
-        border: 1px solid white;
-        color: white;
-        background: black;
-        cursor: pointer;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-    }
-    
+
+
 }
 
-@media only screen and (max-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-    .julius-sans-one-regular {
-        font-family: "Julius Sans One", sans-serif;
-        font-weight: 1000;
-        font-style: normal;
-    }
-    
-    .jost-regualar {
-        font-family: "Jost", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-    }
-    
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Julius Sans One", "Jost", sans-serif;
-    }
-    
-    /* regular declarations */
-    
-    body {
-        min-height: 210vh;
-        overflow-x: hidden;
-    }
-    
-    .navbar {
-        transition: all 0.5s;
-    }
-    
-    .nav-item {
-        padding: 1%;
-        left: 0;
-    }
-    
-    .navbar-nav {
-        margin-left: 59%;
-    }
-    
-    .navbar-brand {
-        margin-left: 1%;
-    }
-    
-    .navbar-logo {
-        width: 40px;
-        height: 100px;
-        padding: .5%;
-        margin-left: 2.5%;
-    }
-    
-    .smart-scroll {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-    
-    .scrolled-down {
-        transform: translateY(-100%);
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .scrolled-up {
-        transform: translateY(0);
-        transition: all 0.3s ease-in-out;
-    }
-    
-    p {
-        font-family: "Jost", sans-serif;
-        font-size: 10px;
-    }
-    
-    #lab-intro{
-        margin-top:-10%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        width: auto;
-        height:auto;
-    }
-    
-    .right{
-        display: flex;
-        background-color: black;
-        height:auto;
-    
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        width: 100%;
-    
-        display: absolute;
-    }
-    
-    .left{
-        display:absolute;
-        background-color: black;
-    }
-    
-    .myVideo{
-        margin-left:-12%;
-    }
-    
-    #myVideo{
-        width:100%;
-        height:auto;
-    }
-    
-    .lab-name{
-        color: white;
-        margin-top:50%;
-        padding: 2%;
-        width: 55%;
-        height: auto;
-        text-align: center;
-        transform: translate(45%, 0);
-    }
-    
-    .lab-name h3{
-        font-size: 12px;
-    }
-    
-    .lab-name h1{
-        font-size: 60px;
-    }
-    
-    .lab-name h4{
-        font-family: "Jost", sans-serif;
-        font-size: 16px;
-    }
-    
-    #button1 {
-        border-radius: 70px;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        border: none;
-        color: black;
-        background: white;
-        cursor: pointer;
-        display: block;
-        margin: auto;
-        letter-spacing: 6px;
-    
-    }
-    
-    
-    #what-we-study {
-        width: 100%;
-        height: auto;
-        background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
-        display: absolute;
-    }
-    
-    .what-we-study-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        padding: 5%;
-    }
-    
-    .study-img {
-        margin-left: 12%;
-        margin-top: 5%;
-    
-    }
-    
-    .study-content h1 {
-        text-align: left;
-        letter-spacing: 2px;
-        font-size: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .leftt {
-        margin-left: 2%;
-    }
-    
-    .leftt p {
-        text-align: left;
-        font-family: "Jost", sans-serif;
-        line-height: 2rem;
-        font-size: 20px;
-        margin-top: 20px;
-        margin-right: 7%;
-        margin-bottom: 2%;
-    }
-    
-    .rightt{
-        display:absolute;
-    }
-    
-    .buttonbot{
-        padding:2%;
-    }
-    
-    #button2 {
-        border-radius: 50%;
-        padding: 1rem 1rem;
-        font-size: 1rem;
-        border: 1px solid black;
-        color: black;
-        background: white;
-        cursor: pointer;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .tag {
-        opacity: 0;
-        transform: translate(0, 10vh);
-        transition: all 3s;
-    }
-    
-    .tag.visible {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    
-    .fadeInUp-animation {
-        animation: 2.5s fadeInUp;
-    }
-    
-    @keyframes fadeInUp {
-        0% {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-    
-        100% {
-            transform: translateY(0%);
-            opacity: 1;
-        }
-    }
-    
-    .fade {
-        transition: opacity 0.7s ease-in;
-    }
-    
-    .fadeOut {
-        opacity: 0;
-    }
-    
-    .fadeIn {
-        opacity: 1;
-    }
-    
-    
-    #how-we-do-it {
-        width: 100%;
-        height: auto;
-        background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
-    }
-    
-    
-    .how-it-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        padding: 5%;
-    }
-    
-    .how-it-content {
-        display: block;
-        padding: 1%;
-    }
-    
-    
-    .five-items {
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        position: relative;
-        align-items: left;
-    }
-    
-    .oneitem {
-        margin: auto;
-        display: absolute;
-        align-items: left;
-        padding: 1.5%;
-    }
-    
-    .oneitem h2 {
-        text-align: left;
-        letter-spacing: 2px;
-        color: black
-    }
-    
-    .oneitem p {
-        text-align: left;
-        font-family: "Jost", sans-serif;
-        font-size: 16px;
-        color: black
-    }
-    
-    .pagebutton{
-        padding:2%;
-    }
-    
-    .c{
-        margin-left: -1%;
-        margin-top: -5%;
-    }
-    
-    .s {
-        width: 50%;
-        height: 35%;
-    }
-    
-    .i {
-        width: 28%;
-        height: 30%;
-        margin-top: -5%;
-    }
-    
-    .b {
-        width: 50%;
-        height: 35%;
-    }
-    
-    .g {
-        width: 45%;
-        height: 33%;
-    }
-    
-    #button3 {
-        border-radius: 50%;
-        padding: 1rem 1rem;
-        font-size: 1rem;
-        border: 1px solid white;
-        color: white;
-        background: black;
-        cursor: pointer;
-        position: absolute;
-        width: 50px;
-        height: 50px;
+@media only screen and (max-width: 1440px) {
+    .navbar-logo{
+        width: 10%;
+        height: 10%;
     }
 }
 
-@media only screen and (max-width:768){
-    .julius-sans-one-regular {
-        font-family: "Julius Sans One", sans-serif;
-        font-weight: 1000;
-        font-style: normal;
-    }
-    
-    .jost-regualar {
-        font-family: "Jost", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-    }
-    
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Julius Sans One", "Jost", sans-serif;
-    }
-    
-    /* regular declarations */
-    
-    body {
-        min-height: 210vh;
-        overflow-x: hidden;
-    }
-    
-    .navbar {
-        transition: all 0.5s;
-    }
-    
-    .nav-item {
-        padding: 1%;
-        left: 0;
-    }
-    
-    .navbar-nav {
-        margin-left: 59%;
-    }
-    
-    .navbar-brand {
-        margin-left: 1%;
-    }
-    
-    .navbar-logo {
-        width: 100px;
-        height: 100px;
-        padding: .5%;
-        margin-left: 2.5%;
-    }
-    
-    .smart-scroll {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-    
-    .scrolled-down {
-        transform: translateY(-100%);
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .scrolled-up {
-        transform: translateY(0);
-        transition: all 0.3s ease-in-out;
-    }
-    
-    p {
-        font-family: "Jost", sans-serif;
-        font-size: 10px;
-    }
-    
-    #lab-intro{
-        margin-top:-10%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        width: auto;
-        height:auto;
-    }
-    
-    .right{
-        display: flex;
-        background-color: black;
-        height:auto;
-    
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        width: 100%;
-    
-        display: absolute;
-    }
-    
-    .left{
-        display:absolute;
-        background-color: black;
-    }
-    
-    .myVideo{
-        margin-left:-12%;
-    }
-    
-    #myVideo{
-        width:100%;
-        height:auto;
-    }
-    
-    .lab-name{
-        color: white;
-        margin-top:50%;
-        padding: 2%;
-        width: 55%;
-        height: auto;
-        text-align: center;
-        transform: translate(45%, 0);
-    }
-    
-    .lab-name h3{
-        font-size: 12px;
-    }
-    
-    .lab-name h1{
-        font-size: 60px;
-    }
-    
-    .lab-name h4{
-        font-family: "Jost", sans-serif;
-        font-size: 16px;
-    }
-    
-    #button1 {
-        border-radius: 70px;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        border: none;
-        color: black;
-        background: white;
-        cursor: pointer;
-        display: block;
-        margin: auto;
-        letter-spacing: 6px;
-    
-    }
-    
-    
-    #what-we-study {
-        width: 100%;
-        height: auto;
-        background: linear-gradient(224deg, #eee5d3 20%, #fffaf4 81.18%);
-        display: absolute;
-    }
-    
-    .what-we-study-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        padding: 5%;
-    }
-    
-    .study-img {
-        margin-left: 12%;
-        margin-top: 5%;
-    
-    }
-    
-    .study-content h1 {
-        text-align: left;
-        letter-spacing: 2px;
-        font-size: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .leftt {
-        margin-left: 2%;
-    }
-    
-    .leftt p {
-        text-align: left;
-        font-family: "Jost", sans-serif;
-        line-height: 2rem;
-        font-size: 20px;
-        margin-top: 20px;
-        margin-right: 7%;
-        margin-bottom: 2%;
-    }
-    
-    .rightt{
-        display:absolute;
-    }
-    
-    .buttonbot{
-        padding:2%;
-    }
-    
-    #button2 {
-        border-radius: 50%;
-        padding: 1rem 1rem;
-        font-size: 1rem;
-        border: 1px solid black;
-        color: black;
-        background: white;
-        cursor: pointer;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .tag {
-        opacity: 0;
-        transform: translate(0, 10vh);
-        transition: all 3s;
-    }
-    
-    .tag.visible {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    
-    .fadeInUp-animation {
-        animation: 2.5s fadeInUp;
-    }
-    
-    @keyframes fadeInUp {
-        0% {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-    
-        100% {
-            transform: translateY(0%);
-            opacity: 1;
-        }
-    }
-    
-    .fade {
-        transition: opacity 0.7s ease-in;
-    }
-    
-    .fadeOut {
-        opacity: 0;
-    }
-    
-    .fadeIn {
-        opacity: 1;
-    }
-    
-    
-    #how-we-do-it {
-        width: 100%;
-        height: auto;
-        background: linear-gradient(247.2deg, #e3e5fc 8.64%, #f7f8fc 52.48%, #efeeeb 86.51%);
-    }
-    
-    
-    .how-it-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: auto;
-        padding: 5%;
-    }
-    
-    .how-it-content {
-        display: block;
-        padding: 1%;
-    }
-    
-    
-    .five-items {
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        position: relative;
-        align-items: left;
-    }
-    
-    .oneitem {
-        margin: auto;
-        display: absolute;
-        align-items: left;
-        padding: 1.5%;
-    }
-    
-    .oneitem h2 {
-        text-align: left;
-        letter-spacing: 2px;
-        color: black
-    }
-    
-    .oneitem p {
-        text-align: left;
-        font-family: "Jost", sans-serif;
-        font-size: 16px;
-        color: black
-    }
-    
-    .pagebutton{
-        padding:2%;
-    }
-    
-    .c{
-        margin-left: -1%;
-        margin-top: -5%;
-    }
-    
-    .s {
-        width: 50%;
-        height: 35%;
-    }
-    
-    .i {
-        width: 28%;
-        height: 30%;
-        margin-top: -5%;
-    }
-    
-    .b {
-        width: 50%;
-        height: 35%;
-    }
-    
-    .g {
-        width: 45%;
-        height: 33%;
-    }
-    
-    #button3 {
-        border-radius: 50%;
-        padding: 1rem 1rem;
-        font-size: 1rem;
-        border: 1px solid white;
-        color: white;
-        background: black;
-        cursor: pointer;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-    }
-}
+@media only screen and (max-width:768px) {}
