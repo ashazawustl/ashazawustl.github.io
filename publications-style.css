@@ -240,11 +240,11 @@ section {
 
 .paper {
     text-decoration: none;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 a.paper:hover {
-    font-size: 120%;
+    font-size: 101%;
     text-decoration: none;
     color: inherit;
 }

@@ -142,19 +142,18 @@ h6 {
     width: 200%;
 }
 
-.header1 {
+/* .header1 {
     height: 550px;
     width: 100%;
     object-fit: cover;
     z-index: -1;
     translate: -25%;
     filter: blur(5px);
-}
+} */
 
 .ongoing-research {
     background: #fff;
     z-index: 1;
-    transform: translate(0, -20%);
     padding: 2%;
 }
 
