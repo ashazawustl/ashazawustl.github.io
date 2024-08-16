@@ -75,6 +75,10 @@ h6 {
     transition: all 0.5s;
 }
 
+.navbar-collapse{
+    background: black;
+}
+
 .container-fluid {
     justify-content: space-between;
 }
