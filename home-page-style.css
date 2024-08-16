@@ -403,7 +403,7 @@ p {
 }
 
 .oneitem a {
-    color: #000;
+    color: #fff;
     display: grid;
     place-items: center;
 }
