@@ -75,10 +75,6 @@ h6 {
     transition: all 0.5s;
 }
 
-.navbar-collapse{
-    background: black;
-}
-
 .container-fluid {
     justify-content: space-between;
 }
@@ -261,6 +257,10 @@ h2 {
     }
     .navbar-nav {
         text-align: right;
+    }
+
+    .navbar-collapse{
+        background: black;
     }
 
     .nav-item {

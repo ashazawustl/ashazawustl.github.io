@@ -75,10 +75,6 @@ h6 {
     transition: all 0.5s;
 }
 
-.navbar-collapse{
-    background: white;
-}
-
 .container-fluid {
     justify-content: space-between;
 }
@@ -210,6 +206,10 @@ p {
 
     .navbar-nav{
         text-align: right;
+    }
+
+    .navbar-collapse{
+        background: white;
     }
 
     .nav-item{

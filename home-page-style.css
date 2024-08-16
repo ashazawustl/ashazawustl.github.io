@@ -85,10 +85,6 @@ h6 {
     left: 0;
 }
 
-.navbar-collapse{
-    background: black;
-}
-
 .navbar-nav {
     margin: 0;
     justify-content: flex-end;
@@ -415,6 +411,10 @@ p {
 
     .navbar-nav {
         text-align: right;
+    }
+
+    .navbar-collapse{
+        background: black;
     }
 
     .nav-item {

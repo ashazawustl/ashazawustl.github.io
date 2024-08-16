@@ -75,10 +75,6 @@ h6 {
     transition: all 0.5s;
 }
 
-.navbar-collapse{
-    background: white;
-}
-
 .container-fluid {
     justify-content: space-between;
 }
@@ -272,6 +268,10 @@ h6 {
     .navbar-logo {
         width: 15%;
         height: 15%;
+    }
+
+    .navbar-collapse{
+        background: white;
     }
 
     .img-container {
