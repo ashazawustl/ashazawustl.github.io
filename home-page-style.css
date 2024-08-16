@@ -472,7 +472,7 @@ p {
 
     #button1 {
         border-radius: 50px;
-        padding: 5px 5px;
+        padding: 5px 10px;
         font-size: 12px;
         border: none;
         color: black;
@@ -502,7 +502,9 @@ p {
         margin: 0 !important;
         height: auto;
     }
-
+    .oneitem img{
+        translate: 0%;
+    }
     .five-items {
         margin: auto;
         display: grid;
@@ -558,22 +560,31 @@ p {
     }
 
     .c img {
-        width: 70%;
-        height: 72%;
+        width: 50%;
+        height: 62%;
+    }
+
+
+    .in-vivo{
+        translate: 2%;
+        text-transform: center;
     }
 
 
     .s {
-        width: 70%;
+        width: 50%;
         height: 100%;
     }
 
     .i {
-        width: 50%;
-        height: 65%;
+        width: 40%;
+        height: 100%;
 
     }
 
+    .in-vivo{
+        translate: 25%;
+    }
 
     .b {
         width: 50%;
