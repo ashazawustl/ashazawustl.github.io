@@ -350,22 +350,28 @@ p {
     color: black
 }
 
+.oneitem img{
+    translate: 50%;
+}
+
 .pagebutton {
     padding: 2%;
 }
 
 .c {
-    margin-left: -1%;
+    transform: translate(50%,0%);
+    width: 25%
 }
+  
 
 .s {
-    width: 50%;
+    width: 45%;
     height: 35%;
 }
 
 .i {
-    width: 28%;
-    height: 30%;
+    width: 35%;
+    height: 40%;
 
 }
 
@@ -394,6 +400,8 @@ p {
 
 .oneitem a {
     color: #000;
+    display: grid;
+    place-items: center;
 }
 
 @media screen and (max-width:500px) {
