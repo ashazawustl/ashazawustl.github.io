@@ -428,21 +428,29 @@ p {
         height: 15%;
     }
 
+
+    #lab-intro {
+        display: grid;
+        grid-template-columns: 100%;
+        width: auto;
+        height: auto;
+    }
+
     .lab-name {
         color: white;
-        padding: 2%;
+        padding: 5%;
         width: 50%;
-        height: 40%;
+        height: 100%;
         text-align: center;
         transform: translate(50%, 0%);
     }
 
     .lab-name h3 {
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .lab-name h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .lab-name h4 {
@@ -451,13 +459,13 @@ p {
     }
 
     .lab-name p {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     #button1 {
-        border-radius: 30px;
-        padding: 5px 10px;
-        font-size: 5px;
+        border-radius: 50px;
+        padding: 5px 5px;
+        font-size: 12px;
         border: none;
         color: black;
         background: white;
@@ -504,7 +512,7 @@ p {
         font-size: 25px;
     }
 
-    .leftt p{
+    .leftt p {
         text-align: center;
         font-size: 12px;
         line-height: 14px;
@@ -524,7 +532,7 @@ p {
         font-size: 25px;
     }
 
-    .pagebutton{
+    .pagebutton {
         padding: 10%;
         display: grid;
         place-items: center;
@@ -537,33 +545,33 @@ p {
         padding: 1.5%;
     }
 
-    .oneitem h2{
+    .oneitem h2 {
         font-size: 18px;
     }
 
-    .c img{
+    .c img {
         width: 70%;
         height: 72%;
     }
 
-    
+
     .s {
         width: 70%;
-        height:100%;
-    }
-    
-    .i {
-        width: 50%;
-        height:65%;
-    
+        height: 100%;
     }
 
-    
+    .i {
+        width: 50%;
+        height: 65%;
+
+    }
+
+
     .b {
         width: 50%;
         height: 100%;
     }
-    
+
     .g {
         width: 45%;
         height: 100%;
