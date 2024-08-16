@@ -350,7 +350,7 @@ p {
     color: black
 }
 
-.oneitem img{
+.oneitem img {
     translate: 50%;
 }
 
@@ -359,10 +359,10 @@ p {
 }
 
 .c {
-    transform: translate(50%,0%);
+    transform: translate(50%, 0%);
     width: 25%
 }
-  
+
 
 .s {
     width: 45%;
@@ -502,9 +502,11 @@ p {
         margin: 0 !important;
         height: auto;
     }
-    .oneitem img{
+
+    .oneitem img {
         translate: 0%;
     }
+
     .five-items {
         margin: auto;
         display: grid;
@@ -559,15 +561,14 @@ p {
         font-size: 18px;
     }
 
+    .c{
+        transform: translate(0%,0%);
+        margin-bottom: 5%;;
+    }
+
     .c img {
         width: 50%;
         height: 62%;
-    }
-
-
-    .in-vivo{
-        translate: 2%;
-        text-transform: center;
     }
 
 
@@ -583,7 +584,7 @@ p {
     }
 
     .in-vivo{
-        translate: 25%;
+        font-size: 1px;
     }
 
     .b {
