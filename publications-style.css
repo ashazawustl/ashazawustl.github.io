@@ -236,6 +236,7 @@ section {
 
 .twenty22 a {
     color: white;
+    text-decoration: none;
 }
 
 .paper {
@@ -262,8 +263,17 @@ a.paper:hover {
     color: white;
 }
 
+.twenty20 a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .twenty19 a {
     color: black;
+}
+
+.twenty17-and-earlier a:hover {
+    color: white;
 }
 
 .twenty17-and-earlier a {
@@ -360,23 +370,23 @@ a.paper:hover {
 
 @media screen and (max-width: 500px) {
 
-    .navbar-toggler{
+    .navbar-toggler {
         width: 10%;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         text-align: right;
     }
 
-    .navbar-collapse{
+    .navbar-collapse {
         background: white;
     }
 
-    .nav-item{
+    .nav-item {
         right: 100%;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         width: 80%;
     }
 
@@ -390,22 +400,22 @@ a.paper:hover {
         align-items: center;
     }
 
-    .navbar-logo{
+    .navbar-logo {
         width: 15%;
-        height:15%;
+        height: 15%;
     }
 
     .page-sections h2 {
         margin-left: 2rem;
         margin-top: 30px;
-    
+
     }
 
-    .paper{
+    .paper {
         width: 100%;
     }
 
-    .ext{
+    .ext {
         width: 5%;
     }
 
@@ -417,7 +427,7 @@ a.paper:hover {
         margin-right: 10rem;
         width: 85%;
     }
-    
+
     .twenty24 p {
         font-family: "Jost", sans-serif;
         font-size: 11px;
@@ -434,7 +444,7 @@ a.paper:hover {
         margin-right: 10rem;
         width: 85%;
     }
-    
+
     .twenty22 p {
         font-family: "Jost", sans-serif;
         font-size: 11px;
@@ -451,7 +461,7 @@ a.paper:hover {
         margin-right: 10rem;
         width: 85%;
     }
-    
+
     .twenty21 p {
         font-family: "Jost", sans-serif;
         font-size: 11px;
@@ -468,7 +478,7 @@ a.paper:hover {
         margin-right: 10rem;
         width: 85%;
     }
-    
+
     .twenty20 p {
         font-family: "Jost", sans-serif;
         font-size: 11px;
@@ -485,7 +495,7 @@ a.paper:hover {
         margin-right: 10rem;
         width: 85%;
     }
-    
+
     .twenty19 p {
         font-family: "Jost", sans-serif;
         font-size: 11px;
@@ -500,7 +510,7 @@ a.paper:hover {
         margin-top: 20px;
         color: white;
     }
-    
+
     .twenty17-and-earlier .twenty17-list {
         margin-top: 30px;
         margin-left: 2rem;
